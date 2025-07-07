@@ -1,0 +1,15 @@
+@import "./../../../styles.scss";
+
+nav {
+  width: 100%;
+  padding: 32px;
+  display: flex;
+  @include dFlex($jc: space-between);
+  > div {
+    width: 450px;
+    @include dFlex($g: 16px);
+    > a {
+        gap: 16px;
+    }
+  }
+}
