@@ -3,13 +3,31 @@
 nav {
   width: 100%;
   padding: 32px;
-  display: flex;
+
+  > h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+    padding-left: 50px;;
+  }
+
   @include dFlex($jc: space-between);
   > div {
-    width: 450px;
-    @include dFlex($g: 16px);
+    @include dFlex($g: 50px);
     > a {
-        gap: 16px;
+      color: white;
+      text-decoration: none;
+      font-size: 26px;
+
+      &:hover {
+        color: #70e61c;
+      }
     }
+  }
+
+  .language-selector {
+    display: flex;
+    padding-left: 50px;
+    gap: 12px;
   }
 }
