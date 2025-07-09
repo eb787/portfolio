@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Portfolio } from './portfolio';
+import { AboveTheFold } from './above-the-fold';
 
-describe('Portfolio', () => {
-  let component: Portfolio;
-  let fixture: ComponentFixture<Portfolio>;
+describe('AboveTheFold', () => {
+  let component: AboveTheFold;
+  let fixture: ComponentFixture<AboveTheFold>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Portfolio]
+      imports: [AboveTheFold]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Portfolio);
+    fixture = TestBed.createComponent(AboveTheFold);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

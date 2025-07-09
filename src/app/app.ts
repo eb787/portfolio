@@ -3,13 +3,16 @@ import { RouterOutlet } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me';
 import { ContactComponent } from './contact/contact';
 import { HeaderComponant } from './shared/header/header';
+import { ProjectsComponent } from './projects/projects';
+import { AboveTheFoldComponent } from './above-the-fold/above-the-fold';
+import { MySkillsComponent } from './my-skills/my-skills';
 
 
 
 @Component({
   selector: 'app-root',
    standalone: true,
-  imports: [RouterOutlet, AboutMeComponent, ContactComponent, HeaderComponant ],
+  imports: [RouterOutlet, AboutMeComponent, ContactComponent, HeaderComponant, ProjectsComponent, AboutMeComponent, AboveTheFoldComponent, MySkillsComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
