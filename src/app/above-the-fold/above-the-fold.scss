@@ -43,9 +43,52 @@ h3 {
   height: 700px;
 }
 
-.bkg-hero{
- display: flex;
+.bkg-hero {
+  display: flex;
   position: absolute;
   width: 100%;
   top: 140px;
+}
+
+.links-above-the-fold {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  gap: 30px;
+  top: 750px;
+  left: 0;
+  > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  &:hover {
+    > a {
+      cursor: pointer;
+    }
+  }
+
+  > img:hover {
+    transform: scale(1.6) translateX(4px);
+    transition: transform 0.2s ease;
+  }
+}
+
+.seperator-above-the-fold {
+  height: 3px;
+  width: 85px;
+  background-color: rgb(139, 17, 240);
+}
+
+.scroll-down {
+  color: white;
+  display: flex;
+  font-size: 28px;
+  right: 0px;
+  transform: rotate(90deg);
+  transform: 180deg;
+  transform-origin: left top;
+  display: inline-block;
+  position: absolute;
+  top: 700px;
 }
