@@ -4,12 +4,13 @@ section {
 
 h1 {
   color: white;
-  font-size: 40px;
+  font-size: 60px;
+  font-family: bold;
 }
 
 h2 {
   color: rgb(139, 17, 240);
-  font-size: 40px;
+  font-size: 42px;
 }
 
 h3 {
@@ -18,9 +19,9 @@ h3 {
   transform-origin: left top;
   display: inline-block;
   position: absolute;
-  font-size: 40px;
-  top: 90px;
-  left: -50px;
+  font-size: 45px;
+  top: 115px;
+  left: -65px;
 }
 
 .hero-text {
@@ -34,20 +35,16 @@ h3 {
 .hero-picture {
   display: flex;
   position: absolute;
-  top: 100px;
-  left: 80px;
-  height: 500px;
-}
-
-.bkg-green-violet-picture {
-  height: 700px;
+  top: 120px;
+  left: 140px;
+  height: 600px;
 }
 
 .bkg-hero {
   display: flex;
   position: absolute;
   width: 100%;
-  top: 140px;
+  top: 180px;
 }
 
 .links-above-the-fold {
@@ -55,7 +52,7 @@ h3 {
   position: absolute;
   align-items: center;
   gap: 30px;
-  top: 750px;
+  top: 850px;
   left: 0;
   > a {
     color: white;
@@ -90,5 +87,5 @@ h3 {
   transform-origin: left top;
   display: inline-block;
   position: absolute;
-  top: 700px;
+  top: 680px;
 }
