@@ -52,6 +52,46 @@ h2 {
   gap: 100px;
 }
 
+.my-skills-text-contant {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 400px;
+
+  p {
+    color: white;
+    padding-bottom: 12px;
+  }
+
+  span {
+    color: white;
+    font-size: 31px;
+    padding-bottom: 12px;
+    padding-right: 7px;
+
+    .highlight{
+      color: rgb(139, 17, 240);
+    }
+  }
+
+  button {
+    color: white;
+    font-size: 18px;
+    width: 170px;
+    height: 55px;
+    border-radius: 8px;
+    background-color: rgb(112, 230, 28);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    transform-origin: top right;
+
+    &:hover {
+      background-color: rgb(139, 17, 240);
+      transform: scale(1.15);
+      cursor: pointer;
+    }
+  }
+}
+
 @keyframes hop {
   0% {
     transform: translateY(0);
