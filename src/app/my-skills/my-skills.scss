@@ -9,7 +9,7 @@ section {
   display: grid;
   max-width: 800px;
   padding-left: 130px;
-  gap: 40px;
+  gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   justify-items: center;
 
@@ -20,8 +20,8 @@ section {
     text-align: center;
 
     img {
-      width: 60px;
-      height: 60px;
+      width: 65px;
+      height: 65px;
     }
 
     &:hover img {
@@ -42,14 +42,14 @@ h2 {
 
 .seperator-my-skills {
   height: 3px;
-  width: 100px;
+  width: 170px;
   background-color: rgb(139, 17, 240);
 }
 
 .my-skills-text {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 150px;
 }
 
 .my-skills-text-contant {
