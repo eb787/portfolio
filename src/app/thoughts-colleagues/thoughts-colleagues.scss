@@ -1,0 +1,91 @@
+section{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.thoughts-colleagues-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+    border: 2px solid rgb(112, 230, 28);
+    height: 230px;
+    width: 850px;
+    border-radius: 26px;
+  
+    > p {
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+.quotes-icon-position{
+    display: flex;
+    transform: translate(30%, -140%);
+}
+
+.author-comment-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+
+    > span {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+.seperator{
+    height: 3px;
+    width: 550px;
+    background-color: rgb(139, 17, 240);
+}
+
+.colleagues-picture-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  
+}
+
+.colleague-picture {
+  display: flex;
+  height: auto;
+  width: 240px;
+  border-radius: 50%;
+  background-color: rgb(20, 29, 47);
+   border: 3px solid rgb(139, 17, 240);
+ 
+}
+
+.seperator-colleague-section{
+    height: 3px;
+    width: 100px;
+    background-color: rgb(139, 17, 240);
+}
+
+.icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 12px;
+}
+
+.arrow-button {
+  width: 42px;
+  height: 42px;
+  padding: 2px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 0 2px rgb(112, 230, 28);
+  }
+}

@@ -1,0 +1,22 @@
+section{
+    display: flex;
+    padding-top: 200px;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 80px;
+}
+
+.seperator-contact {
+    height: 3px;
+    width: 700px;
+    background-color: rgb(139, 17, 240);
+}
