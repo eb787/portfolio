@@ -74,7 +74,11 @@ h2 {
     }
   }
 
-  button {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     color: white;
     font-size: 18px;
     width: 170px;
