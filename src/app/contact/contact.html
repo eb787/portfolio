@@ -12,27 +12,43 @@
         </div>
         <div class="contact-form-container">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+
                 <label for="name"></label>
-                <input #mail="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required/>
-                @if (!mail.valid && mail.touched) {
-                    <span class="error-message">Name is required.</span>
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                    placeholder="Your name" required  />
+                @if (!name.valid && name.touched) {
+                <span class="error-message">Name is required.</span>
                 }
 
                 <label for="email"></label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"/>
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                    placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
                 @if (!email.valid && email.touched) {
-                    <span class="error-message">Please enter a valid email address.</span>
+                <span class="error-message">Please enter a valid email address.</span>
                 }
 
                 <label for="message"></label>
-                <textarea #message="ngModel" minlenght="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message..." required></textarea>
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
+                    placeholder="Your message..." required></textarea>
                 @if (!message.valid && message.touched) {
-                    <span class="error-message">Message must be at least 4 characters long.</span>
+                <span class="error-message">Message must be at least 4 characters long.</span>
                 }
 
-                <button type="submit">Send message :)</button>
+                <div class="checkbox-container">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" [(ngModel)]="checkboxAccepted" name="privacy" required />
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>I've read the <a href="#" class="highlight-contact-form">privacy policy</a> and agree to the
+                        processing of my data.</p>
+                </div>
+
+                <button [disabled]="!contactForm.valid || !checkboxAccepted" type="submit">
+                    Send message :)
+                </button>
             </form>
         </div>
+
 
     </div>
 </section>

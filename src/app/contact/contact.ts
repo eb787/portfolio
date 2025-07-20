@@ -22,6 +22,8 @@ export class ContactComponent {
 
   }
 
+    checkboxAccepted = false;
+
 
   mailTest = true;
 
@@ -37,6 +39,10 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+     if (ngForm.form.valid && this.checkboxAccepted) {
+      console.log('Form Data:', this.contactData);
+      // Weiteres Processing hier
+    }
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
