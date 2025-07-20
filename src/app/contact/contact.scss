@@ -41,6 +41,19 @@ h2 {
   display: flex;
   justify-content: space-around;
   color: white;
+
+  > a {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: absolute;
+  right: 150px;
+  margin-top: 450px;
+&:hover {
+    transform: scale(1.5);
+    transition: transform 0.2s ease;
+  }
+}
 }
 
 .contact-form-container {

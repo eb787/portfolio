@@ -6,45 +6,52 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgb(20,29,47);
+  background-color: rgb(20, 29, 47);
 
   > h2 {
     color: white;
     font-size: 36px;
     font-weight: 600;
     padding-left: 50px;
+
+     .e {
+    color: #70e61c; // grün
+  }
+
+  .i {
+    color: rgb(139, 17, 240); // lila
+  }
   }
 
   @include dFlex($jc: space-between);
   > div {
     @include dFlex($g: 50px);
     > a {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  font-size: 26px;
+      position: relative;
+      color: white;
+      text-decoration: none;
+      font-size: 26px;
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: rgb(139, 17, 240);
-    transition: width 0.3s ease;
-  }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 0;
+        height: 2px;
+        background-color: rgb(139, 17, 240);
+        transition: width 0.3s ease;
+      }
 
-  &:hover::after {
-    width: 100%;
-  }
+      &:hover::after {
+        width: 100%;
+      }
 
-  &:hover {
-    color: #70e61c;
-    text-decoration: none; 
-  }
-}
-
+      &:hover {
+        color: #70e61c;
+        text-decoration: none;
+      }
+    }
   }
 
   .language-selector {

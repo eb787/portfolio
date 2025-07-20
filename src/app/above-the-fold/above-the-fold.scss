@@ -4,13 +4,13 @@ section {
 
 h1 {
   color: white;
-  font-size: 60px;
+  font-size: 70px;
   font-family: bold;
 }
 
 h2 {
   color: rgb(139, 17, 240);
-  font-size: 42px;
+  font-size: 50px;
 }
 
 h3 {
@@ -19,16 +19,16 @@ h3 {
   transform-origin: left top;
   display: inline-block;
   position: absolute;
-  font-size: 45px;
-  top: 115px;
-  left: -65px;
+  font-size: 55px;
+  top: 140px;
+  left: -80px;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   top: 250px;
-  left: 700px;
+  left: 900px;
   position: absolute;
 }
 

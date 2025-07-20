@@ -1,0 +1,50 @@
+section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  color: white;
+}
+
+.seperator-footer {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(112, 230, 28);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer-text {
+  font-size: 28px;
+}
+
+.links-footer {
+  display: flex;
+  gap: 30px;
+
+  > a {
+    &:hover {
+      transform: scale(1.6);
+      transition: transform 0.1s ease;
+    }
+  }
+}
+
+.name {
+  font-size: 32px;
+
+  .e {
+    color: rgb(112, 230, 28);
+  }
+
+  .i {
+    color: rgb(139, 17, 240);
+  }
+}
