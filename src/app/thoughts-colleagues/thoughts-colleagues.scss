@@ -10,16 +10,16 @@ section {
     content: "";
     position: absolute;
     background-image: url("/img/green-my-skills-portfolio-section.png");
-    bottom: 0px;
-    right: -1300px;
-    width: 750px;
-    height: 750px;
+    bottom: -170px;
+    right: -600px;
+    width: 600px;
+    height: 600px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
     pointer-events: none;
     pointer-events: none;
-    transform: rotate(-120deg);
+    transform: rotate(-55deg);
     transform-origin: bottom left;
     z-index: -1;
   }

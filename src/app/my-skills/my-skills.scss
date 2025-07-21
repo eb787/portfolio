@@ -3,6 +3,24 @@ section {
   justify-content: space-between;
   align-items: baseline;
   padding-top: 200px;
+   position: relative; 
+  isolation: isolate; 
+
+   &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/green-my-skills-portfolio-section.png");
+    bottom: -500px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    pointer-events: none;
+    pointer-events: none;
+    z-index: -1;
+}
 }
 
 .div-technologies {

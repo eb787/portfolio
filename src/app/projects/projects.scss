@@ -1,5 +1,25 @@
 section {
+   position: relative;
+  isolation: isolate;
   padding-top: 200px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/purple-portfolio-contact-section.png");
+    bottom: -200px;
+    left: 200px;
+    width: 700px;
+    height: 700px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    pointer-events: none;
+    pointer-events: none;
+    transform: rotate(-55deg);
+    transform-origin: bottom left;
+    z-index: -1;
+  }
 }
 
 .portfolio-seperator-h2-container-position {
