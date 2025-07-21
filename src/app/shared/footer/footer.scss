@@ -37,7 +37,30 @@ main {
   }
 }
 
+.div-name-legal-notice {
+  display: flex;
+  flex-direction: column;
+
+  > a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+    &:hover {
+      &:hover {
+        cursor: pointer;
+        text-decoration-line: underline;
+        text-decoration-color: #70e61c;
+        text-decoration-style: solid;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 5px;
+      }
+    }
+  }
+}
+
 .name {
+  display: flex;
   font-size: 32px;
 
   .e {
