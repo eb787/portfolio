@@ -41,21 +41,21 @@ h2 {
   display: flex;
   justify-content: space-around;
   color: white;
-  position: relative; 
-  isolation: isolate; 
+  position: relative;
+  isolation: isolate;
 
   &::before {
     content: "";
     position: absolute;
     bottom: -60px;
     left: 420px;
-    width: 700px; 
-    height: 700px; 
+    width: 700px;
+    height: 700px;
     background-image: url("/img/purple-portfolio-contact-section.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
-    pointer-events: none; 
+    pointer-events: none;
     z-index: -20;
     transform: rotate(-110deg);
     transform-origin: bottom left;
@@ -236,6 +236,162 @@ h2 {
     &:hover {
       text-decoration: underline;
       cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .seperator-contact {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .seperator-contact {
+    width: 500px;
+  }
+  .contact-text {
+    width: 500px;
+  }
+  .contact-form-container {
+    width: 550px;
+  }
+  .contact-form-container {
+    button[type="submit"] {
+      margin-left: 110px;
+    }
+  }
+  .contact-content {
+    > a {
+      margin-top: 500px;
+      right: 100px;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .seperator-contact {
+    width: 400px;
+  }
+  .contact-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+  }
+  .contact-content {
+    > a {
+      margin-top: 550px;
+      right: 250px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .seperator-contact {
+    width: 300px;
+  }
+  .contact-form-container {
+    button[type="submit"] {
+      margin-left: 100px;
+    }
+  }
+  .contact-content {
+    > a {
+      margin-top: 630px;
+      right: 280px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .seperator-contact {
+    width: 200px;
+  }
+  .contact-content {
+    > a {
+      margin-top: 650px;
+      right: 200px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .seperator-contact {
+    width: 100px;
+  }
+  .contact-content {
+    > a {
+      margin-top: 680px;
+      right: 150px;
+    }
+  }
+  .contact-content {
+  &::before {
+    content: "";
+    bottom: -110px;
+    left: 220px;
+    width: 300px;
+    height: 300px;
+  }
+}
+}
+
+@media (max-width: 550px) {
+   .seperator-contact {
+    width: 50px;
+  }
+  h2{
+    font-size: 60px;
+  }
+  .contact-text {
+  h3 {
+    font-size: 26px;
+  }
+}
+  .contact-text {
+    width: 350px;
+  }
+  .contact-form-container {
+    width: 400px;
+  }
+  .contact-form-container {
+    button[type="submit"] {
+      margin-left: 25px;
+    }
+  }
+  .contact-content {
+    > a {
+      margin-top: 750px;
+      right: 80px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+   .seperator-contact {
+    width: 30px;
+  }
+  .contact-text {
+    width: 250px;
+  }
+  h2{
+    font-size: 50px;
+  }
+  .contact-form-container {
+    width: 300px;
+  }
+  .contact-form-container {
+    button[type="submit"] {
+      margin-left: 10px;
+      width: 230px;
+      padding: 12px 24px;
+    }
+  }
+  .contact-content {
+    > a {
+      margin-top: 750px;
+      right: 80px;
     }
   }
 }

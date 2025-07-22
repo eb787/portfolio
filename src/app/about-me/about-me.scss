@@ -63,3 +63,9 @@ p {
   background-color: rgb(112, 230, 28);
   width: 300px;
 }
+
+@media (max-width: 1400px) {
+ .about-me-picture-container{
+  display: none;
+ }
+}

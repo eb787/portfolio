@@ -3,10 +3,10 @@ section {
   justify-content: space-between;
   align-items: baseline;
   padding-top: 200px;
-   position: relative; 
-  isolation: isolate; 
+  position: relative;
+  isolation: isolate;
 
-   &::before {
+  &::before {
     content: "";
     position: absolute;
     background-image: url("/img/green-my-skills-portfolio-section.png");
@@ -20,7 +20,7 @@ section {
     pointer-events: none;
     pointer-events: none;
     z-index: -1;
-}
+  }
 }
 
 .div-technologies {
@@ -87,7 +87,7 @@ h2 {
     padding-bottom: 12px;
     padding-right: 7px;
 
-    .highlight{
+    .highlight {
       color: rgb(139, 17, 240);
     }
   }
@@ -101,7 +101,7 @@ h2 {
     font-size: 18px;
     width: 170px;
     height: 55px;
-    margin-top: 20px;;
+    margin-top: 20px;
     border-radius: 8px;
     background-color: rgb(112, 230, 28);
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -125,4 +125,32 @@ h2 {
   100% {
     transform: translateY(0);
   }
+}
+
+@media (max-width: 1600px) {
+  .div-technologies {
+    max-width: 700px;
+    padding-left: 100px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .div-technologies {
+    max-width: 600px;
+
+    gap: 40px;
+
+     img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .my-skills-text {
+  gap: 100px;
+}
+}
+
+@media (max-width: 1300px) {
+  
 }

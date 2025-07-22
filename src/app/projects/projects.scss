@@ -1,9 +1,9 @@
 section {
-   position: relative;
+  position: relative;
   isolation: isolate;
   padding-top: 200px;
 
-    &::before {
+  &::before {
     content: "";
     position: absolute;
     background-image: url("/img/purple-portfolio-contact-section.png");
@@ -61,6 +61,18 @@ h2 {
 }
 
 .projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+
+  > img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.pollo-loco-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,5 +149,247 @@ h2 {
     background-color: rgb(112, 230, 28);
     transform: scale(1.15);
     cursor: pointer;
+  }
+}
+
+@media (max-width: 1700px) {
+  .seperator-right-portfolio {
+    width: 600px;
+  }
+
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 450px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .seperator-right-portfolio {
+    width: 500px;
+  }
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 350px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .seperator-right-portfolio {
+    width: 400px;
+  }
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 250px;
+    }
+  }
+  .projects-container {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .seperator-right-portfolio {
+    width: 300px;
+  }
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 150px;
+    }
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  .projects-container {
+    flex-direction: column;
+    padding-bottom: 80px;
+    gap: 0;
+  }
+  .pollo-loco-container {
+    flex-direction: column-reverse;
+  }
+  section {
+    &::before {
+      content: "";
+      bottom: 310px;
+      left: 200px;
+      width: 480px;
+      height: 480px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .seperator-right-portfolio {
+    width: 250px;
+  }
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 100px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .seperator-right-portfolio {
+    width: 170px;
+  }
+  .seperator-left-portfolio {
+    width: 50px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 100px;
+      font-size: 16px;
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .pollo-loco-container {
+    > img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .projects-container {
+    > img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .project-card {
+    width: 400px;
+    > h3 {
+      font-size: 32px;
+    }
+    > span {
+      font-size: 18px;
+    }
+    > p {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .seperator-right-portfolio {
+    width: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 50px;
+      font-size: 16px;
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .seperator-right-portfolio {
+    width: 50px;
+  }
+  .projects-container {
+    > img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .project-card {
+    width: 350px;
+  }
+
+  .buttons-portfolio-position {
+    gap: 45px;
+    padding-top: 18px;
+  }
+
+  .button-live-test {
+    width: 140px;
+    height: 45px;
+  }
+
+  .button-github {
+    width: 140px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .seperator-right-portfolio {
+    width: 50px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+  .portfolio-seperator-h2-container {
+    gap: 15px;
+  }
+
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 30px;
+      width: 350px;
+    }
+  }
+  .projects-container {
+    > img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  .project-card {
+    width: 285px;
+  }
+
+  .buttons-portfolio-position {
+    gap: 35px;
+    padding-top: 18px;
+  }
+
+  .button-live-test {
+    width: 100px;
+    height: 45px;
+  }
+
+  .button-github {
+    width: 100px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 450px) {
+  .seperator-right-portfolio {
+    width: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .portfolio-seperator-h2-container-position {
+    > p {
+      padding-right: 15px;
+      width: 275px;
+    }
   }
 }
