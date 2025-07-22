@@ -1,5 +1,6 @@
 section {
   display: flex;
+  height: 100vh;
 }
 
 h1 {
@@ -35,6 +36,7 @@ h3 {
 .hero-picture {
   display: flex;
   position: absolute;
+  z-index: 1;
   top: 120px;
   left: 140px;
   height: 600px;
@@ -43,9 +45,10 @@ h3 {
 .bkg-hero {
   display: flex;
   position: absolute;
-  width: 100%;
-  z-index: -1;
-  top: 180px;
+  background-size: auto;
+  width: 1980px;
+  height: 500px;
+  top: 500px;
 }
 
 .button-lets-talk {
@@ -118,4 +121,71 @@ h3 {
   display: inline-block;
   position: absolute;
   top: 680px;
+}
+
+@media (max-width: 1500px) {
+  .hero-text {
+    top: 250px;
+    left: 700px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero-text {
+    top: 250px;
+    left: 700px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 40px;
+    top: 100px;
+    left: -60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-text {
+    top: 750px;
+    left: 310px;
+  }
+  .links-above-the-fold {
+    gap: 30px;
+    top: 1000px;
+    left: 0;
+  }
+  .scroll-down {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hero-text {
+    left: 310px;
+  }
+  .hero-picture {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 140px;
+    height: 450px;
+  }
+
+  .bkg-green-violet-picture {
+    height: 700px;
+    width: 700px;
+    display: flex;
+    position: absolute;
+    top: 170px;
+  }
+  .hero-text {
+    left: 240px;
+  }
 }

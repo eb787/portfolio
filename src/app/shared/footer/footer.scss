@@ -59,6 +59,10 @@ main {
   }
 }
 
+.legal-notice-mobile {
+  display: none;
+}
+
 .name {
   display: flex;
   font-size: 32px;
@@ -88,6 +92,7 @@ main {
     }
   }
   .legal-notice-mobile{
+    display: flex;
     color: white;
     font-size: 18px;
     text-decoration: none;
