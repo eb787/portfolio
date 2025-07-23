@@ -1,7 +1,4 @@
 section {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
   padding-top: 200px;
   position: relative;
   isolation: isolate;
@@ -21,6 +18,12 @@ section {
     pointer-events: none;
     z-index: -1;
   }
+}
+
+.div-technologies-my-skills-contant {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .div-technologies {
@@ -115,6 +118,14 @@ h2 {
   }
 }
 
+.my-skills-text-contant-mobile {
+  display: none;
+}
+
+.my-skills-text-mobile {
+  display: none;
+}
+
 @keyframes hop {
   0% {
     transform: translateY(0);
@@ -141,16 +152,77 @@ h2 {
 
     gap: 40px;
 
-     img {
+    img {
       width: 45px;
       height: 45px;
     }
   }
   .my-skills-text {
-  gap: 100px;
-}
+    gap: 100px;
+  }
 }
 
 @media (max-width: 1300px) {
-  
+  .my-skills-text-container {
+    display: none;
+  }
+  .my-skills-text-mobile {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 150px;
+    padding-bottom: 80px;
+  }
+  .div-technologies-my-skills-contant {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .my-skills-text-contant-mobile {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+
+    p {
+      color: white;
+      padding-bottom: 12px;
+    }
+
+    span {
+      color: white;
+      font-size: 31px;
+      padding-bottom: 12px;
+      padding-right: 7px;
+
+      .highlight {
+        color: rgb(139, 17, 240);
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      width: 170px;
+      height: 55px;
+      margin-top: 20px;
+      border-radius: 8px;
+      background-color: rgb(112, 230, 28);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      transform-origin: top right;
+
+      &:hover {
+        background-color: rgb(139, 17, 240);
+        transform: scale(1.15);
+        cursor: pointer;
+      }
+    }
+  }
+  .my-skills-text {
+    padding-bottom: 80px;
+  }
 }

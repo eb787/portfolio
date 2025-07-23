@@ -1,8 +1,6 @@
 section {
   display: flex;
-  gap: 200px;
   align-items: end;
-  width: 100%;
   justify-content: end;
 }
 
@@ -17,16 +15,17 @@ p {
 
 .about-me-text {
   padding-left: 150px;
-  padding-top: 100px;
+  padding-right: 150px;
+
 }
 
 .purple-shadow-about-me-section {
   display: flex;
   position: absolute;
-  height: 512px;
-  width: 286px;
+  height: 500px;
+  width: 250px;
   top: 800px;
-  right: 0px;
+  right: 30px;
 }
 
 .about-me-text-skills {
@@ -65,7 +64,81 @@ p {
 }
 
 @media (max-width: 1400px) {
+ .about-me-text {
+  padding-left: 50px;
+}
+}
+
+@media (max-width: 1300px) {
  .about-me-picture-container{
   display: none;
  }
+  .about-me-text {
+  padding-right: 250px;
+}
+}
+
+@media (max-width: 1100px) {
+section {
+  padding-top: 100px;
+}
+
+h2{
+  font-size: 60px;
+}
+}
+
+@media (max-width: 1100px) {
+.purple-shadow-about-me-section {
+  height: 300px;
+  width: 200px;
+  top: 1000px;
+  right: 30px;
+}
+}
+
+@media (max-width: 1100px) {
+ .about-me-text {
+  padding-right: 150px;
+}
+}
+
+@media (max-width: 650px) {
+ .about-me-text {
+  padding-right: 70px;
+}
+
+section {
+  padding-top: 0px;
+}
+
+.purple-shadow-about-me-section {
+  height: 300px;
+  width: 200px;
+  top: 880px;
+  right: 30px;
+}
+}
+
+@media (max-width: 650px) {
+ .about-me-text {
+  padding-right: 50px;
+  padding-left: 40px;
+}
+
+.purple-shadow-about-me-section {
+  height: 240px;
+  width: 150px;
+  top: 900px;
+  right: 30px;
+}
+}
+
+@media (max-width: 650px) {
+h2{
+  font-size: 50px;
+}
+  p {
+    font-size: 14px;
+  }
 }

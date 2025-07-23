@@ -166,9 +166,7 @@ h3 {
 }
 
 @media (max-width: 1100px) {
-  .hero-text {
-    left: 310px;
-  }
+
   .hero-picture {
     display: flex;
     position: absolute;
@@ -188,4 +186,101 @@ h3 {
   .hero-text {
     left: 240px;
   }
+}
+
+@media (max-width: 720px) {
+  .hero-picture {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 100px;
+    height: 450px;
+  }
+
+  .bkg-green-violet-picture {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    position: absolute;
+    top: 180px;
+  }
+  .hero-text {
+    left: 170px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-picture {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 100px;
+    height: 300px;
+  }
+
+  .bkg-green-violet-picture {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    position: absolute;
+    top: 200px;
+  }
+  .hero-text {
+    left: 120px;
+    top: 600px;
+  }
+
+  .bkg-hero {
+  top: 350px;
+}
+
+ .links-above-the-fold {
+    gap: 20px;
+    top: 850px;
+    left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .hero-picture {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 250px;
+    left: 10px;
+    height: 280px;
+  }
+
+  .bkg-green-violet-picture {
+    height: 320px;
+    width: 320px;
+    display: flex;
+    position: absolute;
+    top: 250px;
+  }
+  .hero-text {
+    left: 50px;
+    top: 580px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 30px;
+    top: 75px;
+    left: -45px;
+  }
+
+  .bkg-hero {
+  top: 330px;
+}
+
+
 }
