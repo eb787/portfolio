@@ -14,13 +14,13 @@ nav {
     font-weight: 600;
     padding-left: 50px;
 
-     .e {
-    color: #70e61c; // grün
-  }
+    .e {
+      color: #70e61c;
+    }
 
-  .i {
-    color: rgb(139, 17, 240); // lila
-  }
+    .i {
+      color: rgb(139, 17, 240);
+    }
   }
 
   @include dFlex($jc: space-between);
@@ -58,5 +58,20 @@ nav {
     display: flex;
     padding-left: 50px;
     gap: 12px;
+  }
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  nav {
+    .nav-links {
+      display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
   }
 }
