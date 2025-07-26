@@ -1,0 +1,28 @@
+{
+  "NAV": {
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio"
+  },
+   "HERO": {
+    "NAME": "Eric Braun",
+    "ROLE": "FRONTEND DEVELOPER",
+    "I_AM": "I am",
+    "CTA": "Let’s talk!"
+  },
+  "ABOUT": {
+    "TITLE": "About me",
+    "INTRO": "I am a passionate front-end developer with a focus on modern frameworks, clean responsive design and high-performance web applications with real added value.",
+    "LOCATION": "Bad Nauheim",
+    "DEVELOPER_DESC": "As a software developer, I enjoy contributing my knowledge of JavaScript and Angular to projects. I work in a solution-oriented manner, am a team player and am always motivated to learn new technologies and methods in order to develop myself professionally.",
+    "TEAMWORK_DESC": "In various projects, I have learned to solve problems both independently and as part of a team in a structured way and to place value on clean, maintainable code according to clean code principles."
+  },
+   "SKILLS": {
+    "TITLE": "My skills",
+    "DESCRIPTION": "I am familiar with these technologies and have realized projects.",
+    "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
+    "MOTIVATION": "I am motivated to expand my knowledge and learn new programming languages.",
+    "CTA": "Get in touch"
+  }
+}
+

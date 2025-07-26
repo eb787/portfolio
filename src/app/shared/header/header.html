@@ -4,14 +4,16 @@
     </h2>
 
     <div class="nav-links">
-        <a href="#about-me">About me</a>
-        <a href="#my-skills">Skills</a>
-        <a href="#projects">Portfolio</a>
-        <div class="language-selector">
-            <img src="/buttons/german-selected.png" alt="">
-            <img src="/buttons/englisch-deselected.png" alt="">
+        <a href="#about-me">{{ 'NAV.ABOUT_ME' | translate }}</a>
+        <a href="#my-skills">{{ 'NAV.SKILLS' | translate }}</a>
+        <a href="#projects">{{ 'NAV.PORTFOLIO' | translate }}</a>
+
+        <div class="language-switcher">
+            <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
+
+            <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
         </div>
-        
+
     </div>
-     <img class="burger-menu" src="/icons/burger-menu.png" alt="">
+        <img class="burger-menu" src="/icons/burger-menu.png" alt="">
 </nav>

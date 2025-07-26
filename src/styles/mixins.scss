@@ -4,3 +4,9 @@
     align-items: $ai;
     gap: $g;
 }
+
+@mixin lang($language) {
+  &.#{$language} {
+    @content;
+  }
+}

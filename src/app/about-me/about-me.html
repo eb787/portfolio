@@ -1,33 +1,30 @@
 <section id="about-me">
-    <div class="about-me-text">
-        <h2>About me</h2>
-        <p>I am a passionate front-end developer with a focus on modern frameworks,
-            clean responsive design and high-performance web applications with real added value.</p>
-        <div>
-            <div class="about-me-text-skills">
-                <img class="hover-icon-about-me" src="icons/location-icon.svg" alt="">
-                <p>Bad Nauheim</p>
-            </div>
-            <div class="about-me-text-skills">
-                <img class="hover-icon-about-me" src="icons/bulb-icon.svg" alt="">
-                <p>As a software developer, I enjoy contributing my knowledge of JavaScript and Angular to projects.
-                    I work in a solution-oriented manner,
-                    am a team player and am always motivated to learn new technologies and methods
-                    in order to develop myself professionally.</p>
-            </div>
-            <div class="about-me-text-skills">
-                <img class="hover-icon-about-me" src="icons/puzzle-icon.svg" alt="">
-                <p>In various projects, I have learned to solve problems both independently and as part of a team
-                    in a structured way and to place value on clean,
-                    maintainable code according to clean code principles.</p>
-            </div>
-        </div>
-    </div>
+  <div class="about-me-text">
+    <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
+    <p>{{ 'ABOUT.INTRO' | translate }}</p>
+
     <div>
-        <div class="about-me-picture-container">
-            <img class="about-me-picture" src="img/about-me-picture.png" alt="">
-            <div class="seperator-about-me-section"></div>
-        </div>
+      <div class="about-me-text-skills">
+        <img class="hover-icon-about-me" src="icons/location-icon.svg" alt="">
+        <p>{{ 'ABOUT.LOCATION' | translate }}</p>
+      </div>
+
+      <div class="about-me-text-skills">
+        <img class="hover-icon-about-me" src="icons/bulb-icon.svg" alt="">
+        <p>{{ 'ABOUT.DEVELOPER_DESC' | translate }}</p>
+      </div>
+
+      <div class="about-me-text-skills">
+        <img class="hover-icon-about-me" src="icons/puzzle-icon.svg" alt="">
+        <p>{{ 'ABOUT.TEAMWORK_DESC' | translate }}</p>
+      </div>
     </div>
-   
+  </div>
+
+  <div>
+    <div class="about-me-picture-container">
+      <img class="about-me-picture" src="img/about-me-picture.png" alt="">
+      <div class="seperator-about-me-section"></div>
+    </div>
+  </div>
 </section>

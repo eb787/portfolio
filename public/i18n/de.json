@@ -1,0 +1,29 @@
+{
+  "NAV": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PORTFOLIO": "Portfolio"
+  },
+   "HERO": {
+    "NAME": "Eric Braun",
+    "ROLE": "FRONTEND DEVELOPER",
+    "I_AM": "Ich bin",
+    "CTA": "Lass uns reden!"
+  },
+  "ABOUT": {
+    "TITLE": "Über mich",
+    "INTRO": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Fokus auf moderne Frameworks, sauberes responsives Design und leistungsstarke Webanwendungen mit echtem Mehrwert.",
+    "LOCATION": "Bad Nauheim",
+    "DEVELOPER_DESC": "Als Softwareentwickler bringe ich gerne mein Wissen über JavaScript und Angular in Projekte ein. Ich arbeite lösungsorientiert, bin teamfähig und stets motiviert, neue Technologien und Methoden zu erlernen, um mich fachlich weiterzuentwickeln.",
+    "TEAMWORK_DESC": "In verschiedenen Projekten habe ich gelernt, Probleme sowohl eigenständig als auch im Team strukturiert zu lösen und Wert auf sauberen, wartbaren Code nach Clean-Code-Prinzipien zu legen."
+  },
+  "SKILLS": {
+    "TITLE": "Meine Fähigkeiten",
+    "DESCRIPTION": "Ich bin mit diesen Technologien vertraut und habe damit Projekte umgesetzt.",
+    "QUESTION": "Du suchst nach <span class='highlight'>einer anderen Fähigkeit</span>?",
+    "MOTIVATION": "Ich bin motiviert, mein Wissen zu erweitern und neue Programmiersprachen zu lernen.",
+    "CTA": "Kontaktiere mich"
+  }
+}
+
+

@@ -1,15 +1,10 @@
 <section id="my-skills">
-    <div class="my-skills-text-mobile d-none">
-        <h2>My skills</h2>
+    <div class="my-skills-text-mobile d-none ">
+        <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
         <div class="seperator-my-skills-mobile"></div>
     </div>
-
-    <p class="p-mobile d-none">I am familiar with these technologies and have realized projects.</p>
-
-
+    <p class="p-mobile d-none">{{ 'SKILLS.DESCRIPTION' | translate }}</p>
     <div class="div-technologies-my-skills-contant">
-
-
         <div class="div-technologies">
             <div>
                 <img src="icons/html-icon.svg" alt="">
@@ -56,23 +51,24 @@
                 <span>Continually learning</span>
             </div>
         </div>
-        <div class="my-skills-text-container">
+        <div class="my-skills-text-container" [ngClass]="currentLang">
             <div class="my-skills-text">
-                <h2>My skills</h2>
+                <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
                 <div class="seperator-my-skills"></div>
             </div>
-            <div class="my-skills-text-contant">
-                <p>I am familiar with these technologies and have realized projects.</p>
-                <span>Looking for <span class="highlight">another skill</span> ?</span>
-                <p>I am motivated to expand my knowledge and learn new programming languages.</p>
-                <a href="#contact" class="my-skills-button">Get in touch</a>
-            </div>
 
+            <div class="my-skills-text-contant">
+                <p>{{ 'SKILLS.DESCRIPTION' | translate }}</p>
+                <span [innerHTML]="'SKILLS.QUESTION' | translate"></span>
+                <p>{{ 'SKILLS.MOTIVATION' | translate }}</p>
+                <a href="#contact" class="my-skills-button">{{ 'SKILLS.CTA' | translate }}</a>
+            </div>
         </div>
     </div>
+
     <div class="my-skills-text-contant-mobile d-none">
-        <span>Looking for <span class="highlight">another skill</span> ?</span>
-        <p>I am motivated to expand my knowledge and learn new programming languages.</p>
-        <a href="#contact" class="my-skills-button">Get in touch</a>
+        <span [innerHTML]="'SKILLS.QUESTION' | translate"></span>
+        <p>{{ 'SKILLS.MOTIVATION' | translate }}</p>
+        <a href="#contact" class="my-skills-button">{{ 'SKILLS.CTA' | translate }}</a>
     </div>
 </section>
