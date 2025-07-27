@@ -97,10 +97,6 @@ h2 {
   > p {
     color: white;
     font-size: 18px;
-
-    .highlight {
-      color: salmon;
-    }
   }
 }
 
@@ -377,7 +373,7 @@ h2 {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .seperator-right-portfolio {
     width: 50px;
   }

@@ -23,6 +23,15 @@
     "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
     "MOTIVATION": "I am motivated to expand my knowledge and learn new programming languages.",
     "CTA": "Get in touch"
+  },
+   "PROJECTS": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Here you can find a selection of my work. Interact with the projects to see my skills in action",
+    "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "EL_POLLO_LOCO": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe rid the town of the chickens that have gone mad.",
+    "DABUBBLE": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "DABUBBLE_SPAN": "<span class='highlight-dabubble'>This app is currently under development.</span>",
+    "CTA": "Mehr erfahren"
   }
 }
 

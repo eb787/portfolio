@@ -23,6 +23,15 @@
     "QUESTION": "Du suchst nach <span class='highlight'>einer anderen Fähigkeit</span>?",
     "MOTIVATION": "Ich bin motiviert, mein Wissen zu erweitern und neue Programmiersprachen zu lernen.",
     "CTA": "Kontaktiere mich"
+  },
+  "PROJECTS": {
+    "TITLE": "Portfolio",
+    "DESCRIPTION": "Hier findest du eine Auswahl meiner Arbeiten. Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstelle und organisiere Aufgaben mit Hilfe der Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
+    "EL_POLLO_LOCO": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, die Stadt von den verrückt gewordenen Hühnern zu befreien.",
+    "DABUBBLE": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
+    "DABUBBLE_SPAN": "<span class='highlight-dabubble'>Diese App befindet sich derzeit in der Entwicklung.</span>",
+    "CTA": "Mehr erfahren"
   }
 }
 

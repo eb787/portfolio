@@ -1,21 +1,25 @@
 <section id="above-the-fold">
-    <div>
-
-        <img class="bkg-green-violet-picture" src="img/bkg-green-violet-hero.png" alt="">
+    <div class="hero-picture-bkg-container">
         <img class="hero-picture" src="img/hero-picture.png" alt="">
         <img class="bkg-hero" src="img/bkg-hero.png" alt="">
-
     </div>
-   <div class="hero-text" [ngClass]="currentLang">
-  <h1>{{ 'HERO.NAME' | translate }}</h1>
-  <h2>{{ 'HERO.ROLE' | translate }}</h2>
-  <h3>{{ 'HERO.I_AM' | translate }}</h3>
-  <div class="button-position-lets-talk">
-    <a href="#contact" class="button-lets-talk">
-      {{ 'HERO.CTA' | translate }}
-    </a>
-  </div>
-</div>
+
+
+
+    <div class="hero-text" [ngClass]="currentLang">
+        <div class="i-am-div">
+            <h3>{{ 'HERO.I_AM' | translate }}</h3>
+        </div>
+        <div>
+            <h1>{{ 'HERO.NAME' | translate }}</h1>
+            <h2>{{ 'HERO.ROLE' | translate }}</h2>
+            <div class="button-position-lets-talk">
+                <a href="#contact" class="button-lets-talk">
+                    {{ 'HERO.CTA' | translate }}
+                </a>
+            </div>
+        </div>
+    </div>
 
 
     <div>
