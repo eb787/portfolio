@@ -4,7 +4,6 @@ import { importProvidersFrom } from '@angular/core';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
-
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 export function HttpLoaderFactory(http: HttpClient) {

@@ -2,7 +2,8 @@ section {
   display: flex;
   align-items: end;
   justify-content: end;
-  padding-top: 200px;
+  padding-top: 110px;;
+ 
   position: relative;
   isolation: isolate;
 
@@ -79,6 +80,8 @@ p {
 }
 
 @media (max-width: 1300px) {
+  section{
+    padding-top: 200px;}
   .about-me-picture-container {
     display: none;
   }

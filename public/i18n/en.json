@@ -4,7 +4,7 @@
     "SKILLS": "Skills",
     "PORTFOLIO": "Portfolio"
   },
-   "HERO": {
+  "HERO": {
     "NAME": "Eric Braun",
     "ROLE": "FRONTEND DEVELOPER",
     "I_AM": "I am",
@@ -17,21 +17,37 @@
     "DEVELOPER_DESC": "As a software developer, I enjoy contributing my knowledge of JavaScript and Angular to projects. I work in a solution-oriented manner, am a team player and am always motivated to learn new technologies and methods in order to develop myself professionally.",
     "TEAMWORK_DESC": "In various projects, I have learned to solve problems both independently and as part of a team in a structured way and to place value on clean, maintainable code according to clean code principles."
   },
-   "SKILLS": {
+  "SKILLS": {
     "TITLE": "My skills",
     "DESCRIPTION": "I am familiar with these technologies and have realized projects.",
     "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
     "MOTIVATION": "I am motivated to expand my knowledge and learn new programming languages.",
     "CTA": "Get in touch"
   },
-   "PROJECTS": {
+  "PROJECTS": {
     "TITLE": "Portfolio",
-    "DESCRIPTION": "Here you can find a selection of my work. Interact with the projects to see my skills in action",
+    "DESCRIPTION": "Here you can find some of my projects to look at and try out.",
     "JOIN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "EL_POLLO_LOCO": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe rid the town of the chickens that have gone mad.",
     "DABUBBLE": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
     "DABUBBLE_SPAN": "<span class='highlight-dabubble'>This app is currently under development.</span>",
     "CTA": "Mehr erfahren"
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Got a problem to solve?",
+    "DESCRIPTION1": "Passionate frontend developer blending design and code – open to exciting new projects.",
+    "DESCRIPTION2": "Need support?",
+    "CTA": "Contact me!",
+    "PLACEHOLDER_NAME": "Your name",
+    "PLACEHOLDER_EMAIL": "Your email",
+    "PLACEHOLDER_MESSAGE": "Your message...",
+    "ERROR_NAME": "Name is required.",
+    "ERROR_EMAIL": "Please enter a valid email address.",
+    "ERROR_MESSAGE": "Message must be at least 4 characters long.",
+    "PRIVACY_TEXT_PART1": "I've read the",
+    "PRIVACY_LINK": "privacy policy",
+    "PRIVACY_TEXT_PART2": "and agree to the processing of my data.",
+    "BUTTON": "Send message :)"
   }
 }
-

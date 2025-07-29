@@ -179,6 +179,7 @@ h2 {
     justify-content: center;
     margin-top: 15px;
     font-size: 16px;
+    padding-left: 10px;
   }
 
   .custom-checkbox {
@@ -227,16 +228,6 @@ h2 {
     border: solid rgb(112, 230, 28);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
-  }
-
-  .highlight-contact-form {
-    color: rgb(139, 17, 240);
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-      cursor: pointer;
-    }
   }
 }
 
@@ -327,28 +318,28 @@ h2 {
     }
   }
   .contact-content {
-  &::before {
-    content: "";
-    bottom: -110px;
-    left: 220px;
-    width: 300px;
-    height: 300px;
+    &::before {
+      content: "";
+      bottom: -110px;
+      left: 220px;
+      width: 300px;
+      height: 300px;
+    }
   }
-}
 }
 
 @media (max-width: 550px) {
-   .seperator-contact {
+  .seperator-contact {
     width: 50px;
   }
-  h2{
+  h2 {
     font-size: 60px;
   }
   .contact-text {
-  h3 {
-    font-size: 26px;
+    h3 {
+      font-size: 26px;
+    }
   }
-}
   .contact-text {
     width: 350px;
   }
@@ -369,13 +360,13 @@ h2 {
 }
 
 @media (max-width: 420px) {
-   .seperator-contact {
+  .seperator-contact {
     width: 30px;
   }
   .contact-text {
     width: 250px;
   }
-  h2{
+  h2 {
     font-size: 50px;
   }
   .contact-form-container {

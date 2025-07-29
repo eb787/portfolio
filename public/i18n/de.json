@@ -4,7 +4,7 @@
     "SKILLS": "Fähigkeiten",
     "PORTFOLIO": "Portfolio"
   },
-   "HERO": {
+  "HERO": {
     "NAME": "Eric Braun",
     "ROLE": "FRONTEND DEVELOPER",
     "I_AM": "Ich bin",
@@ -26,13 +26,28 @@
   },
   "PROJECTS": {
     "TITLE": "Portfolio",
-    "DESCRIPTION": "Hier findest du eine Auswahl meiner Arbeiten. Interagiere mit den Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+    "DESCRIPTION": "Hier findest du einige meiner Projekte zum anschauen und ausprobieren.",
     "JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstelle und organisiere Aufgaben mit Hilfe der Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "EL_POLLO_LOCO": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, die Stadt von den verrückt gewordenen Hühnern zu befreien.",
     "DABUBBLE": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
     "DABUBBLE_SPAN": "<span class='highlight-dabubble'>Diese App befindet sich derzeit in der Entwicklung.</span>",
     "CTA": "Mehr erfahren"
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "SUBTITLE": "Hast du ein Problem zu lösen?",
+    "DESCRIPTION1": "Ich bin leidenschaftlicher Frontend-Entwickler, der Design und Code vereint – und auf der Suche nach spannenden Projekten.",
+    "DESCRIPTION2": "Brauchst du Verstärkung?",
+    "CTA": " Gerne kannst du mich Kontaktiere!",
+    "PLACEHOLDER_NAME": "Dein Name",
+    "PLACEHOLDER_EMAIL": "Deine E-Mail",
+    "PLACEHOLDER_MESSAGE": "Deine Nachricht...",
+    "ERROR_NAME": "Name ist erforderlich.",
+    "ERROR_EMAIL": "Bitte eine gültige E-Mail-Adresse eingeben.",
+    "ERROR_MESSAGE": "Nachricht muss mindestens 4 Zeichen lang sein.",
+    "PRIVACY_TEXT_PART1": "Ich habe die",
+    "PRIVACY_LINK": "Datenschutzerklärung",
+    "PRIVACY_TEXT_PART2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "BUTTON": "Nachricht senden :)"
   }
 }
-
-

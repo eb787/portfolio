@@ -23,6 +23,17 @@ body {
    font-size: 18px;
 }
 
+.highlight-contact-form {
+    color: rgb(139, 17, 240);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+
 /* poppins-200 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

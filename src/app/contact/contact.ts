@@ -3,27 +3,34 @@ import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { inject } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule, CommonModule],
   templateUrl: './contact.html',
-  styleUrl: './contact.scss'
+  styleUrl: './contact.scss',
 })
 export class ContactComponent {
+  currentLang: string;
+
+  constructor(private translate: TranslateService) {
+    this.currentLang = this.translate.currentLang;
+    this.translate.onLangChange.subscribe((event) => {
+      this.currentLang = event.lang;
+    });
+  }
 
   http = inject(HttpClient);
 
-  contactData ={
+  contactData = {
     name: '',
     email: '',
     message: '',
+  };
 
-  }
-
-    checkboxAccepted = false;
-
+  checkboxAccepted = false;
 
   mailTest = true;
 
@@ -39,15 +46,15 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-     if (ngForm.form.valid && this.checkboxAccepted) {
+    if (ngForm.form.valid && this.checkboxAccepted) {
       console.log('Form Data:', this.contactData);
       // Weiteres Processing hier
     }
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -56,7 +63,6 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }

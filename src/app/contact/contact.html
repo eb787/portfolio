@@ -1,37 +1,39 @@
 <section id="contact">
     <div class="contact-header">
         <div class="seperator-contact"></div>
-        <h2>Contact</h2>
+        <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
     </div>
 
     <div class="contact-content">
         <div class="contact-text">
-            <h3>Got a problem to solve?</h3>
-            <p>Encourage people to contact you and desrcibe what role</p>
-            <p>Need a Frontend developer? <span>Contact me!</span></p>
+            <h3>{{ 'CONTACT.SUBTITLE' | translate }}</h3>
+            <p>{{ 'CONTACT.DESCRIPTION1' | translate }}</p>
+            <p>{{ 'CONTACT.DESCRIPTION2' | translate }} <span>{{ 'CONTACT.CTA' | translate }}</span></p>
         </div>
+
         <div class="contact-form-container">
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                 <label for="name"></label>
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                    placeholder="Your name" required  />
+                    [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate" required />
                 @if (!name.valid && name.touched) {
-                <span class="error-message">Name is required.</span>
+                <span class="error-message">{{ 'CONTACT.ERROR_NAME' | translate }}</span>
                 }
 
                 <label for="email"></label>
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+                    [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate" required
+                    pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
                 @if (!email.valid && email.touched) {
-                <span class="error-message">Please enter a valid email address.</span>
+                <span class="error-message">{{ 'CONTACT.ERROR_EMAIL' | translate }}</span>
                 }
 
                 <label for="message"></label>
                 <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
-                    placeholder="Your message..." required></textarea>
+                    [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate" required></textarea>
                 @if (!message.valid && message.touched) {
-                <span class="error-message">Message must be at least 4 characters long.</span>
+                <span class="error-message">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</span>
                 }
 
                 <div class="checkbox-container">
@@ -39,17 +41,27 @@
                         <input type="checkbox" [(ngModel)]="checkboxAccepted" name="privacy" required />
                         <span class="checkmark"></span>
                     </label>
-                    <p>I've read the <a href="#" class="highlight-contact-form">privacy policy</a> and agree to the
-                        processing of my data.</p>
+                    <p class="privacy-text">
+                        {{ 'CONTACT.PRIVACY_TEXT_PART1' | translate }}
+                        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer"
+                            class="highlight-contact-form">
+                            {{ 'CONTACT.PRIVACY_LINK' | translate }}
+                        </a>
+
+                        {{ 'CONTACT.PRIVACY_TEXT_PART2' | translate }}
+                    </p>
+
+
                 </div>
 
                 <button [disabled]="!contactForm.valid || !checkboxAccepted" type="submit">
-                    Send message :)
+                    {{ 'CONTACT.BUTTON' | translate }}
                 </button>
             </form>
         </div>
+
         <a href="#above-the-fold">
-        <img class="arrow-contact" src="icons/arrow-go-up.svg" alt="arrow">
+            <img class="arrow-contact" src="icons/arrow-go-up.svg" alt="arrow">
         </a>
     </div>
 </section>
