@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, CommonModule],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
@@ -13,6 +14,11 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 export class HeaderComponant {
   currentLang: string;
+  overlayOpen = false;
+
+  toggleOverlay() {
+    this.overlayOpen = !this.overlayOpen;
+  }
 
   constructor(private translate: TranslateService) {
     this.currentLang = this.translate.currentLang || this.translate.getDefaultLang();

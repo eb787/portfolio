@@ -2,13 +2,14 @@
   "NAV": {
     "ABOUT_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
-    "PORTFOLIO": "Portfolio"
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt"
   },
   "HERO": {
     "NAME": "Eric Braun",
     "ROLE": "FRONTEND DEVELOPER",
     "I_AM": "Ich bin",
-    "CTA": "Lass uns reden!"
+    "CTA": "Lassen Sie uns reden!"
   },
   "ABOUT": {
     "TITLE": "Über mich",
@@ -20,13 +21,13 @@
   "SKILLS": {
     "TITLE": "Meine Fähigkeiten",
     "DESCRIPTION": "Ich bin mit diesen Technologien vertraut und habe damit Projekte umgesetzt.",
-    "QUESTION": "Du suchst nach <span class='highlight'>einer anderen Fähigkeit</span>?",
+    "QUESTION": "Sie suchen nach <span class='highlight'>einer anderen Fähigkeit</span>?",
     "MOTIVATION": "Ich bin motiviert, mein Wissen zu erweitern und neue Programmiersprachen zu lernen.",
-    "CTA": "Kontaktiere mich"
+    "CTA": "Kontaktieren Sie mich"
   },
   "PROJECTS": {
     "TITLE": "Portfolio",
-    "DESCRIPTION": "Hier findest du einige meiner Projekte zum anschauen und ausprobieren.",
+    "DESCRIPTION": "Hier finden Sie einige meiner Projekte zum anschauen und ausprobieren.",
     "JOIN": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstelle und organisiere Aufgaben mit Hilfe der Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
     "EL_POLLO_LOCO": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, die Stadt von den verrückt gewordenen Hühnern zu befreien.",
     "DABUBBLE": "Diese App ist ein Slack Clone App. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeitnachrichten und robuster Kanalorganisation.",
@@ -35,13 +36,13 @@
   },
   "CONTACT": {
     "TITLE": "Kontakt",
-    "SUBTITLE": "Hast du ein Problem zu lösen?",
+    "SUBTITLE": "Haben Sie ein Problem zu lösen?",
     "DESCRIPTION1": "Ich bin leidenschaftlicher Frontend-Entwickler, der Design und Code vereint – und auf der Suche nach spannenden Projekten.",
-    "DESCRIPTION2": "Brauchst du Verstärkung?",
-    "CTA": " Gerne kannst du mich Kontaktiere!",
-    "PLACEHOLDER_NAME": "Dein Name",
-    "PLACEHOLDER_EMAIL": "Deine E-Mail",
-    "PLACEHOLDER_MESSAGE": "Deine Nachricht...",
+    "DESCRIPTION2": "Brauchen Sie Verstärkung?",
+    "CTA": " Gerne können Sie mich Kontaktiere!",
+    "PLACEHOLDER_NAME": "Ihr Name",
+    "PLACEHOLDER_EMAIL": "Ihre E-Mail",
+    "PLACEHOLDER_MESSAGE": "Ihre Nachricht...",
     "ERROR_NAME": "Name ist erforderlich.",
     "ERROR_EMAIL": "Bitte eine gültige E-Mail-Adresse eingeben.",
     "ERROR_MESSAGE": "Nachricht muss mindestens 4 Zeichen lang sein.",
@@ -49,5 +50,89 @@
     "PRIVACY_LINK": "Datenschutzerklärung",
     "PRIVACY_TEXT_PART2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
     "BUTTON": "Nachricht senden :)"
+  },
+  "FOOTER": {
+    "LEGALNOTICE": "Impressum"
+  },
+  "IMPRINT": {
+    "contact": "Kontakt",
+    "imprint": "Impressum"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzerklärung",
+
+    "section1": {
+      "heading": "1. Datenschutz auf einen Blick",
+      "generalNotes": "Allgemeine Hinweise",
+      "generalText": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.",
+
+      "dataCollection": "Datenerfassung auf dieser Website",
+
+      "responsible": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
+      "responsibleText": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen.",
+
+      "howWeCollect": "Wie erfassen wir Ihre Daten?",
+      "howWeCollectText1": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
+      "howWeCollectText2": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).",
+
+      "purpose": "Wofür nutzen wir Ihre Daten?",
+      "purposeText": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Anfragen verarbeitet.",
+
+      "rights": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+      "rightsText": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht auf Berichtigung oder Löschung dieser Daten. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese jederzeit widerrufen. Zudem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung zu verlangen sowie ein Beschwerderecht bei der zuständigen Aufsichtsbehörde."
+    },
+
+    "section2": {
+      "heading": "2. Hosting",
+      "provider": "All-Inkl",
+      "providerText": "Anbieter ist die ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (nachfolgend All-Inkl). Details entnehmen Sie der Datenschutzerklärung von All-Inkl: https://all-inkl.com/datenschutzinformationen/",
+      "processing": "Auftragsverarbeitung",
+      "processingText": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) mit All-Inkl geschlossen. Dieser stellt sicher, dass Ihre personenbezogenen Daten nur auf unsere Weisung und gemäß der DSGVO verarbeitet werden."
+    },
+
+    "section3": {
+      "heading": "3. Allgemeine Hinweise und Pflichtinformationen",
+
+      "dataProtection": "Datenschutz",
+      "dataProtectionText": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung. Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+
+      "responsibleEntity": "Hinweis zur verantwortlichen Stelle",
+      "responsibleEntityText": "Verantwortlich für die Datenverarbeitung ist: Eric Braun, Am Taubenbaum 1a, 61231 Bad Nauheim, E-Mail: eb.developer87@gmail.com",
+
+      "retention": "Speicherdauer",
+      "retentionText": "Sofern in dieser Datenschutzerklärung keine spezielle Speicherdauer genannt wurde, verbleiben Ihre Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Danach werden sie gelöscht, es sei denn, gesetzliche Aufbewahrungsfristen bestehen.",
+
+      "legalBases": "Rechtsgrundlagen der Datenverarbeitung",
+      "legalBasesText": "Die Datenverarbeitung erfolgt auf Basis der DSGVO, insbesondere Art. 6 Abs. 1 lit. a, b, c und f sowie § 25 TDDDG, sofern dies für die Funktionalität der Website oder vertragliche Zwecke notwendig ist. Einwilligungen können jederzeit widerrufen werden.",
+
+      "recipients": "Empfänger von personenbezogenen Daten",
+      "recipientsText": "Wir geben Ihre personenbezogenen Daten nur dann an Dritte weiter, wenn dies gesetzlich erlaubt ist oder Sie eingewilligt haben. Empfänger können z. B. IT-Dienstleister, Steuerbehörden oder Auftragsverarbeiter sein.",
+
+      "withdrawal": "Widerruf Ihrer Einwilligung",
+      "withdrawalText": "Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der Verarbeitung bis zum Widerruf bleibt davon unberührt.",
+
+      "objection": "Widerspruchsrecht nach Art. 21 DSGVO",
+      "objectionText": "Wenn die Datenverarbeitung auf Art. 6 Abs. 1 lit. e oder f DSGVO beruht, haben Sie jederzeit das Recht, aus Gründen Ihrer besonderen Situation Widerspruch einzulegen.",
+
+      "complaint": "Beschwerderecht bei der Aufsichtsbehörde",
+      "complaintText": "Bei Verstößen gegen die DSGVO steht Ihnen ein Beschwerderecht bei der zuständigen Datenschutzaufsichtsbehörde zu.",
+
+      "dataPortability": "Recht auf Datenübertragbarkeit",
+      "dataPortabilityText": "Sie haben das Recht, Daten, die wir automatisiert verarbeiten, in einem gängigen maschinenlesbaren Format an sich oder an einen Dritten aushändigen zu lassen.",
+
+      "accessCorrectionDeletion": "Auskunft, Berichtigung und Löschung",
+      "accessCorrectionDeletionText": "Sie haben das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung oder Löschung dieser Daten.",
+
+      "restriction": "Recht auf Einschränkung der Verarbeitung",
+      "restrictionText": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen, z. B. wenn Sie die Richtigkeit der Daten bestreiten oder die Daten für bestimmte Zwecke benötigen.",
+
+      "encryption": "SSL- bzw. TLS-Verschlüsselung",
+      "encryptionText": "Diese Seite nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie am 'https://' in der Adresszeile und dem Schloss-Symbol."
+    },
+
+    "footer": {
+      "source": "Quelle: https://www.e-recht24.de"
+    }
   }
 }
+

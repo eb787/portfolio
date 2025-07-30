@@ -2,7 +2,8 @@
   "NAV": {
     "ABOUT_ME": "About me",
     "SKILLS": "Skills",
-    "PORTFOLIO": "Portfolio"
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
   },
   "HERO": {
     "NAME": "Eric Braun",
@@ -49,5 +50,89 @@
     "PRIVACY_LINK": "privacy policy",
     "PRIVACY_TEXT_PART2": "and agree to the processing of my data.",
     "BUTTON": "Send message :)"
+  },
+  "FOOTER": {
+    "LEGALNOTICE": "Legal notice"
+  },
+  "IMPRINT": {
+    "contact": "Contact",
+    "imprint": "Legal Notice"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+
+    "section1": {
+      "heading": "1. Data Protection at a Glance",
+      "generalNotes": "General Notes",
+      "generalText": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to personally identify you. Detailed information on data protection can be found in our privacy policy listed below this text.",
+
+      "dataCollection": "Data Collection on This Website",
+
+      "responsible": "Who is responsible for data collection on this website?",
+      "responsibleText": "Data processing on this website is carried out by the website operator. Their contact details can be found in the section 'Information about the Responsible Party' in this privacy policy.",
+
+      "howWeCollect": "How do we collect your data?",
+      "howWeCollectText1": "Your data is collected in part by you providing it to us. This could, for example, be data you enter into a contact form.",
+      "howWeCollectText2": "Other data is collected automatically or with your consent when you visit the website. This data is primarily technical (e.g., browser, operating system, or time of page access). It is collected automatically as soon as you enter this website.",
+
+      "purpose": "What do we use your data for?",
+      "purposeText": "Some of the data is collected to ensure the proper functioning of the website. Other data may be used to analyze your user behavior. If contracts are initiated or concluded through the website, submitted data may also be used for proposals, orders, or other service requests.",
+
+      "rights": "What rights do you have regarding your data?",
+      "rightsText": "You have the right to receive information free of charge about the origin, recipient, and purpose of your stored personal data at any time. You also have the right to request correction or deletion of this data. If you have given consent to data processing, you can withdraw it at any time. You also have the right to request restriction of processing under certain circumstances and the right to lodge a complaint with the responsible supervisory authority."
+    },
+
+    "section2": {
+      "heading": "2. Hosting",
+      "provider": "All-Inkl",
+      "providerText": "The provider is ALL-INKL.COM - Neue Medien Münnich, owner René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). For details, please refer to All-Inkl’s privacy policy: https://all-inkl.com/datenschutzinformationen/",
+      "processing": "Data Processing Agreement",
+      "processingText": "We have concluded a data processing agreement (DPA) with All-Inkl. This ensures that personal data is processed strictly in accordance with our instructions and in compliance with the GDPR."
+    },
+
+    "section3": {
+      "heading": "3. General Information and Mandatory Disclosures",
+
+      "dataProtection": "Data Protection",
+      "dataProtectionText": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy. Please note that data transmission over the internet (e.g., email communication) can have security vulnerabilities. A complete protection of data against third-party access is not possible.",
+
+      "responsibleEntity": "Information about the Responsible Party",
+      "responsibleEntityText": "The responsible party for data processing is: Eric Braun, Am Taubenbaum 1a, 61231 Bad Nauheim, Email: eb.developer87@gmail.com",
+
+      "retention": "Storage Duration",
+      "retentionText": "Unless a more specific retention period is stated in this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies. If you request deletion or revoke your consent, the data will be deleted unless we are legally obliged to retain it.",
+
+      "legalBases": "Legal Bases for Data Processing",
+      "legalBasesText": "Data processing is carried out on the basis of the GDPR, especially Art. 6(1)(a), (b), (c), and (f), as well as § 25 TDDDG, depending on the purpose (e.g., website functionality or contracts). Consent may be revoked at any time.",
+
+      "recipients": "Recipients of Personal Data",
+      "recipientsText": "We only share your personal data with third parties if legally permitted or if you have consented. Possible recipients include IT service providers, tax authorities, or processors under a processing agreement.",
+
+      "withdrawal": "Withdrawal of Your Consent",
+      "withdrawalText": "You may revoke your consent at any time. The legality of the data processing carried out before the revocation remains unaffected by the withdrawal.",
+
+      "objection": "Right to Object under Art. 21 GDPR",
+      "objectionText": "If data processing is based on Art. 6(1)(e) or (f) GDPR, you have the right to object to the processing of your personal data at any time for reasons arising from your particular situation.",
+
+      "complaint": "Right to Lodge a Complaint with a Supervisory Authority",
+      "complaintText": "If you believe that your rights under the GDPR have been violated, you have the right to file a complaint with a supervisory authority in your habitual residence, place of work, or the place of the alleged infringement.",
+
+      "dataPortability": "Right to Data Portability",
+      "dataPortabilityText": "You have the right to receive data that we process automatically based on your consent or in fulfillment of a contract, in a common machine-readable format, or to have it transmitted to another controller, where technically feasible.",
+
+      "accessCorrectionDeletion": "Access, Correction, and Deletion",
+      "accessCorrectionDeletionText": "Within the scope of the applicable legal provisions, you have the right at any time to request free information about your stored personal data, its origin and recipients, and the purpose of the data processing, as well as a right to correction or deletion.",
+
+      "restriction": "Right to Restrict Processing",
+      "restrictionText": "You have the right to request the restriction of processing of your personal data. This right applies, for example, if you contest the accuracy of the data or if the data is no longer needed but you require it to assert legal claims.",
+
+      "encryption": "SSL or TLS Encryption",
+      "encryptionText": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries, this website uses SSL or TLS encryption. You can recognize an encrypted connection by the 'https://' in the browser’s address line and the lock icon."
+    },
+
+    "footer": {
+      "source": "Source: https://www.e-recht24.de"
+    }
   }
 }
+

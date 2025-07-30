@@ -168,7 +168,7 @@ section {
 
 @media (max-width: 950px) {
   .thoughts-colleagues-div {
-    height: 245px;
+    height: 345px;
     width: 450px;
     margin-right: 0px;
   }
@@ -178,13 +178,13 @@ section {
   }
 
   .quotes-icon-position {
-    transform: translate(-230%, -450%);
+    transform: translate(-230%, -600%);
   }
 }
 
 @media (max-width: 600px) {
   .thoughts-colleagues-div {
-    height: 200px;
+    height: 350px;
     width: 300px;
   }
 
@@ -193,6 +193,6 @@ section {
   }
 
   .quotes-icon-position {
-    transform: translate(-100%, -430%);
+    transform: translate(-100%, -630%);
   }
 }
