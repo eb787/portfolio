@@ -13,16 +13,16 @@
   },
   "ABOUT": {
     "TITLE": "Über mich",
-    "INTRO": "Ich bin ein leidenschaftlicher Frontend-Entwickler mit Fokus auf moderne Frameworks, sauberes responsives Design und leistungsstarke Webanwendungen mit echtem Mehrwert.",
+    "INTRO": "Ich bin begeistert vom Entwickeln von Software – vor allem, weil ich gerne komplexe Anforderungen in durchdachte und funktionierende Anwendungen übersetze. Der Weg von der Idee zur Lösung fasziniert mich immer wieder aufs Neue.",
     "LOCATION": "Bad Nauheim",
-    "DEVELOPER_DESC": "Als Softwareentwickler bringe ich gerne mein Wissen über JavaScript und Angular in Projekte ein. Ich arbeite lösungsorientiert, bin teamfähig und stets motiviert, neue Technologien und Methoden zu erlernen, um mich fachlich weiterzuentwickeln.",
-    "TEAMWORK_DESC": "In verschiedenen Projekten habe ich gelernt, Probleme sowohl eigenständig als auch im Team strukturiert zu lösen und Wert auf sauberen, wartbaren Code nach Clean-Code-Prinzipien zu legen."
+    "DEVELOPER_DESC": "Neue Technologien auszuprobieren und meine Fähigkeiten kontinuierlich zu erweitern, ist fester Bestandteil meiner Arbeit.",
+    "TEAMWORK_DESC": "Probleme löse ich mit analytischem Denken, Kreativität und Ausdauer. Effiziente und elegante Lösungen sind mein Ziel – und jede Herausforderung eine Chance, dazuzulernen. Zusammenarbeit ist dabei ein wichtiger Teil des Prozesses."
   },
   "SKILLS": {
     "TITLE": "Meine Fähigkeiten",
-    "DESCRIPTION": "Ich bin mit diesen Technologien vertraut und habe damit Projekte umgesetzt.",
+    "DESCRIPTION": "Mit diesen Tools und Frameworks habe ich zahlreiche Projekte realisiert.",
     "QUESTION": "Sie suchen nach <span class='highlight'>einer anderen Fähigkeit</span>?",
-    "MOTIVATION": "Ich bin motiviert, mein Wissen zu erweitern und neue Programmiersprachen zu lernen.",
+    "MOTIVATION": "Ich freue mich darauf, mein Wissen einzubringen, um gemeinsam die Unternehmensziele zu erreichen.",
     "CTA": "Kontaktieren Sie mich"
   },
   "PROJECTS": {

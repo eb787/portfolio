@@ -13,16 +13,16 @@
   },
   "ABOUT": {
     "TITLE": "About me",
-    "INTRO": "I am a passionate front-end developer with a focus on modern frameworks, clean responsive design and high-performance web applications with real added value.",
+    "INTRO": "I'm passionate about developing software – especially because I enjoy translating complex requirements into well-designed, functional applications. The journey from an idea to a working solution continues to fascinate me.",
     "LOCATION": "Bad Nauheim",
-    "DEVELOPER_DESC": "As a software developer, I enjoy contributing my knowledge of JavaScript and Angular to projects. I work in a solution-oriented manner, am a team player and am always motivated to learn new technologies and methods in order to develop myself professionally.",
-    "TEAMWORK_DESC": "In various projects, I have learned to solve problems both independently and as part of a team in a structured way and to place value on clean, maintainable code according to clean code principles."
+    "DEVELOPER_DESC": "Exploring new technologies and constantly improving my skills is an essential part of how I work",
+    "TEAMWORK_DESC": "My problem-solving combines analytical thinking, creativity, and persistence. I aim for efficient, elegant solutions and see each challenge as a learning opportunity. Collaboration is key to my approach."
   },
   "SKILLS": {
     "TITLE": "My skills",
-    "DESCRIPTION": "I am familiar with these technologies and have realized projects.",
+    "DESCRIPTION": "I have successfully completed numerous projects using these tools and frameworks.",
     "QUESTION": "Looking for <span class='highlight'>another skill</span>?",
-    "MOTIVATION": "I am motivated to expand my knowledge and learn new programming languages.",
+    "MOTIVATION": "I look forward to applying my knowledge to help achieve company goals together.",
     "CTA": "Get in touch"
   },
   "PROJECTS": {

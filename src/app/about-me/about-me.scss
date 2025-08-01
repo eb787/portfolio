@@ -126,3 +126,18 @@ p {
 
 }
 
+@media (max-width: 400px) {
+.about-me-text {
+    padding-right: 50px;
+    padding-left: 40px;
+  }
+
+    h2 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+}
+
