@@ -274,12 +274,13 @@ h3 {
 @media (max-width: 600px) {
   .hero-picture {
     height: 450px;
+    padding-right: 100px;
   }
   .bkg-hero {
-    top: 385px;
+    top: 360px;
   }
   .links-above-the-fold-div-position {
-    top: 900px;
+    top: 950px;
      span {
         display: none;
       }
@@ -336,7 +337,7 @@ h3 {
     height: 400px;
   }
   .bkg-hero {
-    top: 345px;
+    top: 315px;
   }
   .hero-text {
     &.de {
