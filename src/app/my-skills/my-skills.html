@@ -1,9 +1,9 @@
 <section id="my-skills">
-    <div class="my-skills-text-mobile d-none"[ngClass]="currentLang">
-                <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
+    <div class="my-skills-text-mobile d-none" [ngClass]="currentLang">
+        <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
         <div class="seperator-my-skills-mobile"></div>
     </div>
-    
+
     <p class="p-mobile d-none">{{ 'SKILLS.DESCRIPTION' | translate }}</p>
     <div class="div-technologies-my-skills-contant">
         <div class="div-technologies">
@@ -52,6 +52,11 @@
                 <span>Continually learning</span>
             </div>
         </div>
+         
+                <img class="green-my-skills-portfolio-section" src="img/green-my-skills-portfolio-section.png" alt="">
+       
+
+
         <div class="my-skills-text-container" [ngClass]="currentLang">
             <div class="my-skills-text">
                 <h2>{{ 'SKILLS.TITLE' | translate }}</h2>
@@ -72,4 +77,6 @@
         <p>{{ 'SKILLS.MOTIVATION' | translate }}</p>
         <a href="#contact" class="my-skills-button">{{ 'SKILLS.CTA' | translate }}</a>
     </div>
+
+
 </section>

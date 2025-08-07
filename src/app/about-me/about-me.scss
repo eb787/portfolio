@@ -2,26 +2,7 @@ section {
   display: flex;
   align-items: end;
   justify-content: end;
-  padding-top: 110px;;
- 
-  position: relative;
-  isolation: isolate;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/purple-shadow-about-me.png");
-    bottom: 100px;
-    right: -220px;
-    width: 550px;
-    height: 550px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    pointer-events: none;
-    pointer-events: none;
-    z-index: -1;
-  }
+  padding-top: 110px;
 }
 
 h2 {
@@ -55,6 +36,14 @@ p {
   justify-content: center;
   align-items: center;
   padding-top: 25px;
+  .purple-shadow-about-me {
+    display: flex;
+    height: 350px;
+    width: 350px;
+    margin-left: 364px;
+    margin-bottom: 400px;
+    position: absolute;
+  }
 }
 
 .about-me-picture {
@@ -80,8 +69,9 @@ p {
 }
 
 @media (max-width: 1300px) {
-  section{
-    padding-top: 200px;}
+  section {
+    padding-top: 200px;
+  }
   .about-me-picture-container {
     display: none;
   }
@@ -99,45 +89,32 @@ p {
     padding-right: 150px;
   }
 
-  section {
-  &::before {
-    content: "";
-    bottom: 300px;
-    right: -140px;
-    width: 350px;
-    height: 350px;
- 
-  }
-}
 }
 
 @media (max-width: 650px) {
-.about-me-text {
+  .about-me-text {
     padding-right: 50px;
-    padding-left: 40px;
+    padding-left: 50px;
   }
 
-    h2 {
+  h2 {
     font-size: 50px;
   }
   p {
     font-size: 14px;
   }
-
 }
 
 @media (max-width: 400px) {
-.about-me-text {
+  .about-me-text {
     padding-right: 50px;
     padding-left: 40px;
   }
 
-    h2 {
+  h2 {
     font-size: 40px;
   }
   p {
     font-size: 14px;
   }
-
 }
-

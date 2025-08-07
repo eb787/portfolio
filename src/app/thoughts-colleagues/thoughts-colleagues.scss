@@ -1,28 +1,25 @@
 section {
-  position: relative;
-  isolation: isolate;
   display: flex;
   justify-content: end;
   align-items: center;
   padding-top: 200px;
+  overflow-x: hidden;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/green-my-skills-portfolio-section.png");
-    bottom: -170px;
-    right: -450px;
-    width: 500px;
-    height: 500px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    pointer-events: none;
-    pointer-events: none;
-    transform: rotate(-55deg);
-    transform-origin: bottom left;
-    z-index: -1;
-  }
+.image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.green-shadow {
+  position: absolute;
+  right: 0;
+  transform: translateX(30%) translateY(-70%) rotate(-75deg);
+  width: 50vw;
+  max-width: 500px;
+  height: auto;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .thoughts-colleagues-div {
@@ -131,10 +128,9 @@ section {
 @media (max-width: 1350px) {
   section {
     flex-direction: column-reverse;
-    &::before {
-      content: "";
-      bottom: 100px;
-    }
+  }
+  .image-wrapper {
+    align-items: flex-end;
   }
 
   .quotes-icon-position {
@@ -150,19 +146,6 @@ section {
 
   .seperator-colleague-section {
     display: none;
-  }
-}
-
-@media (max-width: 1100px) {
-  section {
-    flex-direction: column-reverse;
-    &::before {
-      content: "";
-      bottom: 350px;
-      right: -400px;
-      width: 400px;
-      height: 400px;
-    }
   }
 }
 
@@ -194,5 +177,14 @@ section {
 
   .quotes-icon-position {
     transform: translate(-100%, -630%);
+  }
+}
+
+@media (max-width: 450px) {
+  section {
+    flex-direction: column-reverse;
+    .green-shadow {
+      transform: translateX(40%) translateY(-250%) rotate(-75deg);
+    }
   }
 }

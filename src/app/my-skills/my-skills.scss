@@ -1,23 +1,5 @@
 section {
   padding-top: 200px;
-  position: relative;
-  isolation: isolate;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("/img/green-my-skills-portfolio-section.png");
-    bottom: -500px;
-    left: -400px;
-    width: 800px;
-    height: 800px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom left;
-    pointer-events: none;
-    pointer-events: none;
-    z-index: -1;
-  }
 }
 
 .div-technologies-my-skills-contant {
@@ -26,7 +8,19 @@ section {
   align-items: baseline;
 }
 
+.green-my-skills-portfolio-section {
+  position: absolute;
+  top: 2000px;
+  left: -20vw;
+  transform: rotate(-10deg) translateY(10%);
+  width: 60vw;
+  max-width: 700px;
+  height: auto;
+  z-index: -1;
+}
+
 .div-technologies {
+  position: relative;
   display: grid;
   max-width: 800px;
   padding-left: 130px;
@@ -374,14 +368,9 @@ section {
     padding-left: 100px;
     padding-right: 100px;
   }
-  section {
-    &::before {
-      content: "";
-      bottom: -500px;
-      left: -400px;
-      width: 680px;
-      height: 680px;
-    }
+
+  .green-my-skills-portfolio-section {
+    top: 2600px;
   }
 }
 
@@ -397,12 +386,13 @@ section {
         width: 50px;
       }
     }
-        &.en {
+    &.en {
       h2 {
         font-size: 50px;
       }
     }
   }
+
   .div-technologies {
     max-width: 420px;
     gap: 25px;
@@ -413,7 +403,6 @@ section {
       }
     }
   }
-
   .seperator-my-skills-mobile {
     width: 80px;
   }
@@ -443,16 +432,6 @@ section {
     padding-right: 100px;
   }
 
-  section {
-    &::before {
-      content: "";
-      bottom: -400px;
-      left: -250px;
-      width: 480px;
-      height: 480px;
-    }
-  }
-
   .my-skills-text-contant-mobile {
     padding-left: 50px;
     padding-right: 30px;
@@ -470,7 +449,7 @@ section {
         width: 20px;
       }
     }
-        &.en {
+    &.en {
       h2 {
         font-size: 40px;
       }
@@ -483,6 +462,7 @@ section {
   .div-technologies {
     max-width: 350px;
   }
+
   .p-mobile {
     padding-left: 20px;
     padding-right: 20px;

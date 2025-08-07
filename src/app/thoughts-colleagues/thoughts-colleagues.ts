@@ -19,8 +19,8 @@ currentIndex = 0;
     },
     {
       text: "Immer zuverlässig, kreativ und ein Teamplayer durch und durch.",
-      author: "Eric B.",
-      image: "img/about-me-picture.png"
+      author: "Flynn A.",
+      image: "img/flynn.png"
     },
     {
       text: "Mit ihm zu arbeiten macht Spaß, weil er nie Probleme, sondern Lösungen sieht.",
