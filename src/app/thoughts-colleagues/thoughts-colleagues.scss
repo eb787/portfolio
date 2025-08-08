@@ -9,6 +9,7 @@ section {
 .image-wrapper {
   display: flex;
   justify-content: flex-end;
+  
 }
 
 .green-shadow {
@@ -71,8 +72,9 @@ section {
 
 .colleague-picture {
   display: flex;
-  height: auto;
+  height: 300px;
   width: 300px;
+  object-fit: cover;
   border-radius: 50%;
   background-color: rgb(20, 29, 47);
   border: 3px solid rgb(139, 17, 240);
@@ -90,6 +92,7 @@ section {
   justify-content: center;
   gap: 12px;
   padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .arrow-button {
@@ -150,6 +153,12 @@ section {
 }
 
 @media (max-width: 950px) {
+    section {
+    .green-shadow {
+      transform: translateX(-20%) translateY(-90%) rotate(-30deg);
+      left: 0;
+    }
+  }
   .thoughts-colleagues-div {
     height: 345px;
     width: 450px;
@@ -166,6 +175,14 @@ section {
 }
 
 @media (max-width: 600px) {
+
+    section {
+    flex-direction: column-reverse;
+    .green-shadow {
+      transform: translateX(-20%) translateY(-380%) rotate(20deg);
+      left: 0;
+    }
+  }
   .thoughts-colleagues-div {
     height: 350px;
     width: 300px;
@@ -177,14 +194,5 @@ section {
 
   .quotes-icon-position {
     transform: translate(-100%, -630%);
-  }
-}
-
-@media (max-width: 450px) {
-  section {
-    flex-direction: column-reverse;
-    .green-shadow {
-      transform: translateX(40%) translateY(-250%) rotate(-75deg);
-    }
   }
 }

@@ -15,14 +15,14 @@
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                 <label for="name"></label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" autocomplete="off" name="name"
                     [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate" required />
                 @if (!name.valid && name.touched) {
                 <span class="error-message">{{ 'CONTACT.ERROR_NAME' | translate }}</span>
                 }
 
                 <label for="email"></label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" autocomplete="off" name="email"
                     [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate" required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
                 @if (!email.valid && email.touched) {
@@ -30,7 +30,7 @@
                 }
 
                 <label for="message"></label>
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" name="message"
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" autocomplete="off" name="message"
                     [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate" required></textarea>
                 @if (!message.valid && message.touched) {
                 <span class="error-message">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</span>
@@ -64,5 +64,5 @@
             <img class="arrow-contact" src="icons/arrow-go-up.svg" alt="arrow">
         </a>
     </div>
-    <img class="purple-portfolio-contact" src="/img/purple-portfolio-contact-section.png" alt="">
+    <img class="purple-portfolio-contact" src="img/purple-portfolio-contact-section.png" alt="">
 </section>

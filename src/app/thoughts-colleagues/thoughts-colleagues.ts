@@ -20,7 +20,7 @@ currentIndex = 0;
     {
       text: "Immer zuverlässig, kreativ und ein Teamplayer durch und durch.",
       author: "Flynn A.",
-      image: "img/about-me-picture.png"
+      image: "img/flynn.png"
     },
     {
       text: "Mit ihm zu arbeiten macht Spaß, weil er nie Probleme, sondern Lösungen sieht.",
