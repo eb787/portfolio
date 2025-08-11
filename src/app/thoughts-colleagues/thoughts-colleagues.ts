@@ -18,7 +18,7 @@ currentIndex = 0;
       image: "img/about-me-picture.png"
     },
     {
-      text: "Immer zuverlässig, kreativ und ein Teamplayer durch und durch.",
+      text: "Eric war eine echte Stütze in unserer Gruppe. Mit seiner lockeren Art hat er immer für gute Stimmung gesorgt, was die Zusammenarbeit deutlich angenehmer gemacht hat. Gleichzeitig war er super zuverlässig – man konnte sich darauf verlassen, dass er seine Aufgaben rechtzeitig und gründlich erledigt. Die Qualität seiner Arbeit war durchweg hoch und hat unser Projekt wirklich vorangebracht. Besonders hilfreich war auch, wie offen er mit Herausforderungen umgegangen ist: Wenn es irgendwo gehakt hat, hat er das klar kommuniziert und uns alle mit ins Boot geholt. So konnten wir gemeinsam schnell Lösungen finden. Insgesamt war es richtig angenehm, mit ihm zusammenzuarbeiten.",
       author: "Flynn A.",
       image: "img/flynn.png"
     },
@@ -44,7 +44,7 @@ currentIndex = 0;
 ngOnInit(): void {
   setInterval(() => {
     this.showNext();
-  }, 3000); 
+  }, 26000); 
 }
 }
 

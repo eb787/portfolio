@@ -9,7 +9,6 @@ section {
 .image-wrapper {
   display: flex;
   justify-content: flex-end;
-  
 }
 
 .green-shadow {
@@ -37,13 +36,39 @@ section {
   > p {
     color: white;
     font-size: 20px;
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: 20px;
+    height: 170px; /* oder passender max-height-Wert */
+    margin-right: 10px;
+    overflow: auto;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(112, 230, 28) transparent;
+
+    /* WebKit-Browser */
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(112, 230, 28);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(112, 230, 28, 0.8);
+    }
   }
 }
 
 .quotes-icon-position {
   display: flex;
-  transform: translate(30%, -140%);
+  transform: translate(40%, -180%);
 }
 
 .author-comment-div {
@@ -137,7 +162,7 @@ section {
   }
 
   .quotes-icon-position {
-    transform: translate(-380%, -450%);
+    transform: translate(-400%, -500%);
   }
 
   .thoughts-colleagues-div {
@@ -153,7 +178,7 @@ section {
 }
 
 @media (max-width: 950px) {
-    section {
+  section {
     .green-shadow {
       transform: translateX(-20%) translateY(-90%) rotate(-30deg);
       left: 0;
@@ -163,7 +188,11 @@ section {
     height: 345px;
     width: 450px;
     margin-right: 0px;
+
+      > p {
+    height: 280px;
   }
+}
 
   .seperator {
     width: 150px;
@@ -175,8 +204,7 @@ section {
 }
 
 @media (max-width: 600px) {
-
-    section {
+  section {
     flex-direction: column-reverse;
     .green-shadow {
       transform: translateX(-20%) translateY(-380%) rotate(20deg);
@@ -193,6 +221,6 @@ section {
   }
 
   .quotes-icon-position {
-    transform: translate(-100%, -630%);
+    transform: translate(-150%, -680%);
   }
 }
