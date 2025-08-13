@@ -106,8 +106,6 @@ h2 {
   textarea.ng-valid.ng-touched {
     border-color: rgb(112, 230, 28) !important;
     box-shadow: 0 0 0 2px rgba(0, 170, 85, 0.2);
-
-    background-image: url("/icons/done-icon.png");
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 1rem;
@@ -118,13 +116,30 @@ h2 {
   textarea.ng-invalid.ng-touched {
     border-color: #e74c3c !important;
     box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
-
-    background-image: url("/icons/error-icon.png");
     background-repeat: no-repeat;
     background-position: right 0.75rem center;
     background-size: 1rem;
     padding-right: 2rem;
   }
+
+  .input-wrapper {
+  position: relative;
+
+  input,
+  textarea {
+    padding-right: 2rem;
+  }
+
+  .icon {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
 
   textarea {
     resize: vertical;

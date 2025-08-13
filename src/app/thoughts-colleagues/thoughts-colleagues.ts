@@ -13,8 +13,8 @@ currentIndex = 0;
 
   testimonials = [
     {
-      text: "Der beste Mitarbeiter den ich je hatte. Bestes Pferd im Stall...",
-      author: "Eric B.",
+      text: "Eric passte gleich ins Team, hat auch durch seine positive Art das Projekt gut vorangetrieben, er hat einen guten Fokus auf die Projektziele. Auch fachlich war  er ein  perfekter Begleiter für das  Projekt.",
+      author: "Christian B.",
       image: "img/about-me-picture.png"
     },
     {
