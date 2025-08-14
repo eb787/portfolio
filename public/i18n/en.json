@@ -133,6 +133,24 @@
     "footer": {
       "source": "Source: https://www.e-recht24.de"
     }
-  }
+  },
+  "TESTIMONIALS": [
+    {
+      "text": "Eric fit right into the team and helped move the project forward with his positive attitude. He maintained a strong focus on the project goals. Professionally, he was also a perfect partner for the project.",
+      "author": "Christian B.",
+      "image": "img/christian.png"
+    },
+    {
+      "text": "Eric was a real asset to our team. With his easygoing manner, he always created a good atmosphere, which made working together much more enjoyable. At the same time, he was highly reliable – you could always count on him to complete his tasks thoroughly and on time. The quality of his work was consistently high and really pushed our project forward. Particularly helpful was how openly he handled challenges: whenever something didn’t go smoothly, he communicated it clearly and brought everyone on board. That allowed us to find solutions quickly together. Overall, it was a real pleasure working with him.",
+      "author": "Flynn A.",
+      "image": "img/flynn.png"
+    },
+    {
+      "text": "Working with Eric Braun was consistently professional and inspiring. From the beginning, he showed a deep understanding of the project goals and contributed his own ideas, which significantly enriched the process. I was especially impressed by his reliable and structured way of working – every detail was implemented with care. Thanks to his expertise, we were able to complete the project not only successfully but also on time. I’m already looking forward to future projects together and can recommend Eric Braun without hesitation.",
+      "author": "Oliver P.",
+      "image": "img/oliver.svg"
+    }
+  ]
+
 }
 

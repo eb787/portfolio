@@ -1,12 +1,13 @@
 <section>
     <div class="image-wrapper">
-    <img class="green-shadow" src="img/green-my-skills-portfolio-section.png" alt="">
+        <img class="green-shadow" src="img/green-my-skills-portfolio-section.png" alt="">
     </div>
     <img class="quotes-icon-position" src="icons/quotes-icon.svg" alt="">
 
     <div *ngIf="testimonials.length">
         <div class="thoughts-colleagues-div">
-            <p>{{ testimonials[currentIndex].text }}</p>
+            <p>{{ testimonials[currentIndex]?.text }}</p>
+
             <div class="author-comment-div">
                 <div class="seperator"></div>
                 <span>{{ testimonials[currentIndex].author }}</span>
@@ -14,17 +15,21 @@
         </div>
 
         <div class="icons-container">
-            <img class="arrow-button" src="icons/arrow-left-green.svg" alt="arrow-left" (click)="showPrevious()" style="cursor: pointer;">
+            <img class="arrow-button" src="icons/arrow-left-green.svg" alt="arrow-left" (click)="showPrevious()"
+                style="cursor: pointer;">
             <ng-container *ngFor="let item of testimonials; index as i">
                 <img [src]="currentIndex === i ? 'icons/ellipse-green.svg' : 'icons/ellipse-violete.svg'"
                     alt="Indikator" class="ellipse-indicator" (click)="setIndex(i)" style="cursor: pointer;">
             </ng-container>
-            <img class="arrow-button" src="icons/arrow-right-green.svg" alt="arrow-right" (click)="showNext()" style="cursor: pointer;">
+            <img class="arrow-button" src="icons/arrow-right-green.svg" alt="arrow-right" (click)="showNext()"
+                style="cursor: pointer;">
         </div>
     </div>
 
     <div class="colleagues-picture-container">
-        <img class="colleague-picture" [src]="testimonials[currentIndex].image" alt="colleague picture">
+    
+        <img class="colleague-picture" [src]="testimonials[currentIndex]?.image" alt="colleague picture">
+
         <div class="seperator-colleague-section"></div>
     </div>
 </section>

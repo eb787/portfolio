@@ -1,33 +1,38 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-thoughts-colleagues',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './thoughts-colleagues.html',
   styleUrl: './thoughts-colleagues.scss'
 })
-export class ThoughtsColleagues implements OnInit {
-currentIndex = 0;
 
-  testimonials = [
-    {
-      text: "Eric passte gleich ins Team, hat auch durch seine positive Art das Projekt gut vorangetrieben, er hat einen guten Fokus auf die Projektziele. Auch fachlich war  er ein  perfekter Begleiter für das  Projekt.",
-      author: "Christian B.",
-      image: "img/about-me-picture.png"
-    },
-    {
-      text: "Eric war eine echte Stütze in unserer Gruppe. Mit seiner lockeren Art hat er immer für gute Stimmung gesorgt, was die Zusammenarbeit deutlich angenehmer gemacht hat. Gleichzeitig war er super zuverlässig – man konnte sich darauf verlassen, dass er seine Aufgaben rechtzeitig und gründlich erledigt. Die Qualität seiner Arbeit war durchweg hoch und hat unser Projekt wirklich vorangebracht. Besonders hilfreich war auch, wie offen er mit Herausforderungen umgegangen ist: Wenn es irgendwo gehakt hat, hat er das klar kommuniziert und uns alle mit ins Boot geholt. So konnten wir gemeinsam schnell Lösungen finden. Insgesamt war es richtig angenehm, mit ihm zusammenzuarbeiten.",
-      author: "Flynn A.",
-      image: "img/flynn.png"
-    },
-    {
-      text: "Mit ihm zu arbeiten macht Spaß, weil er nie Probleme, sondern Lösungen sieht.",
-      author: "Eric B.",
-      image: "img/about-me-picture.png"
-    }
-  ];
+export class ThoughtsColleagues implements OnInit {
+  testimonials: any[] = [];
+  currentIndex = 0;
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit(): void {
+    this.loadTestimonials();
+
+    this.translate.onLangChange.subscribe(() => {
+      this.loadTestimonials();
+    });
+
+    setInterval(() => {
+      this.showNext();
+    }, 26000);
+  }
+
+  loadTestimonials() {
+    this.translate.get('TESTIMONIALS').subscribe((data: any[]) => {
+      this.testimonials = data;
+    });
+  }
 
   showPrevious() {
     this.currentIndex = (this.currentIndex - 1 + this.testimonials.length) % this.testimonials.length;
@@ -38,16 +43,6 @@ currentIndex = 0;
   }
 
   setIndex(index: number) {
-  this.currentIndex = index;
+    this.currentIndex = index;
+  }
 }
-
-ngOnInit(): void {
-  setInterval(() => {
-    this.showNext();
-  }, 26000); 
-}
-}
-
-
-
-
