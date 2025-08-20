@@ -15,23 +15,24 @@
             <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
                 <label for="name"></label>
-                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" autocomplete="off" name="name"
-                    [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate" required />
+                <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" autocomplete="off"
+                    name="name" [placeholder]="'CONTACT.PLACEHOLDER_NAME' | translate" required />
                 @if (!name.valid && name.touched) {
                 <span class="error-message">{{ 'CONTACT.ERROR_NAME' | translate }}</span>
                 }
 
                 <label for="email"></label>
-                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" autocomplete="off" name="email"
-                    [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate" required
+                <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" autocomplete="off"
+                    name="email" [placeholder]="'CONTACT.PLACEHOLDER_EMAIL' | translate" required
                     pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
                 @if (!email.valid && email.touched) {
                 <span class="error-message">{{ 'CONTACT.ERROR_EMAIL' | translate }}</span>
                 }
 
                 <label for="message"></label>
-                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message" autocomplete="off" name="message"
-                    [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate" required></textarea>
+                <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" id="message"
+                    autocomplete="off" name="message" [placeholder]="'CONTACT.PLACEHOLDER_MESSAGE' | translate"
+                    required></textarea>
                 @if (!message.valid && message.touched) {
                 <span class="error-message">{{ 'CONTACT.ERROR_MESSAGE' | translate }}</span>
                 }
@@ -43,8 +44,7 @@
                     </label>
                     <p class="privacy-text">
                         {{ 'CONTACT.PRIVACY_TEXT_PART1' | translate }}
-                        <a href="/privacy-policy" target="_blank" rel="noopener noreferrer"
-                            class="highlight-contact-form">
+                        <a [routerLink]="['/privacy-policy']" class="highlight-contact-form">
                             {{ 'CONTACT.PRIVACY_LINK' | translate }}
                         </a>
 
@@ -56,6 +56,9 @@
                     {{ 'CONTACT.BUTTON' | translate }}
                 </button>
             </form>
+            <div class="message-sent" *ngIf="messageSent">
+                <p>{{ 'CONTACT.MESSAGE_SENT_SUCCESS' | translate }}</p>
+            </div>
         </div>
 
         <a href="#above-the-fold">

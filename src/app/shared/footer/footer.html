@@ -5,11 +5,10 @@
             <div class="name">
                 <span class="e">E</span>r<span class="i">i</span>c
             </div>
-            <a class="legal-notice-desktop" href="./legal-notice" target="_blank" rel="noopener noreferrer">
+            <a class="legal-notice-desktop" [routerLink]="['/legal-notice']">
                 {{ 'FOOTER.LEGALNOTICE' | translate }}
             </a>
         </div>
-
 
         <div class="footer-text">
             <p>© Eric Braun 2025</p>
@@ -21,12 +20,12 @@
             <a href="mailto:dein.name@example.com" target="_blank">
                 <img src="icons/mail-icon.svg" alt="GitHub">
             </a>
-            <a href="" target="_blank">
+            <a href="https://www.linkedin.com/in/e-b-48395a37a/" target="_blank">
                 <img src="icons/linkedIn-icon.svg" alt="GitHub">
             </a>
         </div>
         <div class="legal-notice-mobile">
-            <a  href="./legal-notice" target="_blank" rel="noopener noreferrer">
+            <a [routerLink]="['/legal-notice']">
                 {{ 'FOOTER.LEGALNOTICE' | translate }}
             </a>
         </div>

@@ -48,7 +48,24 @@ section {
       color: white;
     }
   }
+
+  &.animate > div {
+    animation: hop 0.6s ease-out forwards;
+  }
+
+  &.animate > div:nth-child(1) { animation-delay: 0s; }
+  &.animate > div:nth-child(2) { animation-delay: 0.1s; }
+  &.animate > div:nth-child(3) { animation-delay: 0.2s; }
+  &.animate > div:nth-child(4) { animation-delay: 0.3s; }
+  &.animate > div:nth-child(5) { animation-delay: 0.4s; }
+  &.animate > div:nth-child(6) { animation-delay: 0.5s; }
+  &.animate > div:nth-child(7) { animation-delay: 0.6s; }
+  &.animate > div:nth-child(8) { animation-delay: 0.7s; }
+  &.animate > div:nth-child(9) { animation-delay: 0.8s; }
+  &.animate > div:nth-child(10) { animation-delay: 0.9s; }
+  &.animate > div:nth-child(11) { animation-delay: 1s; }
 }
+
 
 .seperator-my-skills {
   height: 3px;
@@ -173,6 +190,8 @@ section {
     transform: translateY(0);
   }
 }
+
+
 
 @media (max-width: 1600px) {
   .div-technologies {

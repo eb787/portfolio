@@ -45,7 +45,7 @@ h2 {
   > a {
     position: absolute;
     right: 150px;
-    margin-top: 450px;
+    margin-top: 550px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -139,7 +139,6 @@ h2 {
     height: 1rem;
   }
 }
-
 
   textarea {
     resize: vertical;
@@ -236,6 +235,18 @@ h2 {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+
+  .message-sent {
+  background-color: rgb(20, 29, 47);
+  color: rgb(112, 230, 28);
+  border: 1px solid rgb(139, 17, 240);
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 1000;
+}
 }
 
 @media (max-width: 1500px) {
@@ -261,7 +272,6 @@ h2 {
   }
   .contact-content {
     > a {
-      margin-top: 500px;
       right: 100px;
     }
   }
@@ -279,7 +289,7 @@ h2 {
   }
   .contact-content {
     > a {
-      margin-top: 750px;
+      margin-top: 880px;
       right: 380px;
     }
   }
@@ -296,7 +306,6 @@ h2 {
   }
   .contact-content {
     > a {
-      margin-top: 780px;
       right: 280px;
     }
   }
@@ -344,7 +353,7 @@ h2 {
   }
   .contact-content {
     > a {
-      margin-top: 850px;
+      margin-top: 900px;
       right: 80px;
     }
   }

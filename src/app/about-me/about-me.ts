@@ -10,4 +10,3 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./about-me.scss']
 })
 export class AboutMeComponent {}
-

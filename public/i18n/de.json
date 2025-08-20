@@ -49,7 +49,9 @@
     "PRIVACY_TEXT_PART1": "Ich habe die",
     "PRIVACY_LINK": "Datenschutzerklärung",
     "PRIVACY_TEXT_PART2": "gelesen und stimme der Verarbeitung meiner Daten zu.",
-    "BUTTON": "Nachricht senden :)"
+    "BUTTON": "Nachricht senden :)",
+    "MESSAGE_SENT_SUCCESS": "Vielen Dank für Ihre Nachricht! Ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "MESSAGE_SENT_ERROR": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten."
   },
   "FOOTER": {
     "LEGALNOTICE": "Impressum"

@@ -4,11 +4,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { inject } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, TranslateModule, CommonModule],
+  imports: [FormsModule, TranslateModule, CommonModule, RouterModule],
   templateUrl: './contact.html',
   styleUrl: './contact.scss',
 })
@@ -31,6 +32,7 @@ export class ContactComponent {
   };
 
   checkboxAccepted = false;
+  messageSent = false;
 
   mailTest = true;
 
@@ -45,25 +47,40 @@ export class ContactComponent {
     },
   };
 
-  onSubmit(ngForm: NgForm) {
-    if (ngForm.form.valid && this.checkboxAccepted) {
-      console.log('Form Data:', this.contactData);
-      // Weiteres Processing hier
-    }
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
-        .subscribe({
-          next: (response) => {
-            ngForm.resetForm();
-          },
-          error: (error) => {
-            console.error(error);
-          },
-          complete: () => console.info('send post complete'),
-        });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+onSubmit(ngForm: NgForm) {
+  if (ngForm.form.valid && this.checkboxAccepted) {
+    console.log('Form Data:', this.contactData);
+
+    if (this.mailTest) {
+      this.messageSent = true;
       ngForm.resetForm();
+      this.checkboxAccepted = false;
+      this.autoHideMessage();
+      return;
     }
+
+
+    this.http
+      .post(this.post.endPoint, this.post.body(this.contactData))
+      .subscribe({
+        next: (response) => {
+          this.messageSent = true;
+          ngForm.resetForm();
+          this.checkboxAccepted = false;
+          this.autoHideMessage();
+        },
+        error: (error) => {
+          console.error(error);
+        },
+        complete: () => console.info('send post complete'),
+      });
   }
+}
+
+autoHideMessage() {
+  setTimeout(() => {
+    this.messageSent = false;
+  }, 5000);
+}
+
 }
