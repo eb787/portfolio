@@ -34,7 +34,7 @@ export class ContactComponent {
   checkboxAccepted = false;
   messageSent = false;
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://contact@eric-braun.net/sendMail.php',
