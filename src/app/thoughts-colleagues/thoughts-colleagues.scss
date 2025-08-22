@@ -2,8 +2,8 @@ section {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-top: 200px;
-  overflow-x: hidden;
+  padding-top: 250px;
+  position: relative;
 }
 
 .image-wrapper {
@@ -14,8 +14,8 @@ section {
 .green-shadow {
   position: absolute;
   right: 0;
-  transform: translateX(30%) translateY(-70%) rotate(-75deg);
-  width: 50vw;
+  transform: translateX(10%) translateY(-70%) rotate(-75deg);
+  width: 45vw;
   max-width: 500px;
   height: auto;
   pointer-events: none;
@@ -38,7 +38,7 @@ section {
     font-size: 20px;
     padding: 40px;
     margin-bottom: 20px;
-    height: 170px; /* oder passender max-height-Wert */
+    height: 170px; 
     margin-right: 10px;
     overflow: auto;
 

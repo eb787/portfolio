@@ -1,8 +1,7 @@
 section {
   display: flex;
-  height: 100vh;
   isolation: isolate;
-
+  position: relative;
   .green-violet-hero {
     display: flex;
     position: absolute;
@@ -39,7 +38,6 @@ h3 {
   display: flex;
   padding-top: 150px;
   padding-left: 100px;
-
   &.de {
     h2 {
       font-size: 50px;
@@ -59,7 +57,6 @@ h3 {
       height: 50px;
     }
   }
-
   &.en {
     h2 {
       font-size: 50px;
@@ -85,8 +82,8 @@ h3 {
   position: absolute;
   background-size: auto;
   width: 100%;
-  height: 500px;
-  top: 500px;
+  height: 450px;
+  top: 400px;
 }
 
 .button-lets-talk {
@@ -101,7 +98,6 @@ h3 {
   border-radius: 8px;
   background-color: rgb(112, 230, 28);
   transition: transform 0.2s ease;
-
   &:hover {
     background-color: rgb(139, 17, 240);
     transform: scale(1.15);
@@ -122,7 +118,7 @@ h3 {
   justify-content: space-between;
   width: 100%;
   gap: 30px;
-  top: 850px;
+  top: 650px;
   left: 0;
 
   .links-above-the-fold-content {
@@ -154,10 +150,10 @@ h3 {
     background-color: rgb(139, 17, 240);
   }
   .scroll-down {
+    position: relative;
+    bottom: 150px;
     color: white;
-    display: flex;
     font-size: 28px;
-    right: 0px;
     transform: rotate(90deg);
     transform-origin: left top;
     display: inline-block;
@@ -205,8 +201,6 @@ h3 {
   animation-delay: 1s;
 }
 
-
-
 @media (max-width: 1450px) {
   .hero-text {
     &.de {
@@ -249,6 +243,10 @@ h3 {
   section {
     flex-direction: column;
   }
+   .green-violet-hero {
+    height: 850px;
+    width: 850px
+  }
   .hero-picture-bkg-container {
     justify-content: center;
   }
@@ -259,7 +257,7 @@ h3 {
     padding-left: 0px;
   }
   .links-above-the-fold-div-position {
-    top: 1050px;
+    top: 850px;
     .scroll-down {
       display: none;
     }
@@ -287,10 +285,10 @@ h3 {
     padding-right: 100px;
   }
   .bkg-hero {
-    top: 360px;
+    top: 250px;
   }
   .links-above-the-fold-div-position {
-    top: 950px;
+    top: 750px;
     span {
       display: none;
     }
@@ -335,19 +333,20 @@ h3 {
 
 @media (max-width: 450px) {
   .hero-picture {
-    height: 400px;
+    height: 280px;
   }
    .green-violet-hero {
     height: 350px;
     width: 350px
   }
   .bkg-hero {
-    top: 315px;
+    top: 85px;
   }
   .links-above-the-fold-div-position {
-    top: 850px;
+    top: 450px;
   }
   .hero-text {
+     margin-top: -165px;
     &.de {
       h1 {
         font-size: 40px;
