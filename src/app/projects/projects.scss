@@ -213,7 +213,10 @@ h2 {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
+  section {
+  padding-top: 150px;
+}
   .seperator-right-portfolio {
     width: 250px;
   }

@@ -65,8 +65,7 @@ h2 {
   max-width: 500px;
   height: auto;
   z-index: -1;
-  left: -20vw;
- 
+  left: -20vw; 
 }
 
 .contact-form-container {
@@ -313,6 +312,9 @@ h2 {
 }
 
 @media (max-width: 950px) {
+  section{
+    padding-top: 150px;
+  }
   .seperator-contact {
     width: 200px;
   }

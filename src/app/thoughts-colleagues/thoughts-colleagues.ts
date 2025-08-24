@@ -25,7 +25,7 @@ export class ThoughtsColleagues implements OnInit {
 
     setInterval(() => {
       this.showNext();
-    }, 26000);
+    }, 15000);
   }
 
   loadTestimonials() {

@@ -10,7 +10,7 @@ section {
 
 .green-my-skills-portfolio-section {
   position: absolute;
-  top: 2000px;
+  top: 1700px;
   left: -20vw;
   transform: rotate(-10deg) translateY(10%);
   width: 60vw;
@@ -191,8 +191,6 @@ section {
   }
 }
 
-
-
 @media (max-width: 1600px) {
   .div-technologies {
     max-width: 700px;
@@ -355,6 +353,9 @@ section {
 }
 
 @media (max-width: 900px) {
+    section{
+    padding-top: 150px;
+  }
   .my-skills-text-mobile {
     &.de {
       h2 {
@@ -389,7 +390,7 @@ section {
   }
 
   .green-my-skills-portfolio-section {
-    top: 2600px;
+    top: 2400px;
   }
 }
 

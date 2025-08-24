@@ -179,6 +179,7 @@ section {
 
 @media (max-width: 950px) {
   section {
+    padding-top: 150px;
     .green-shadow {
       transform: translateX(-20%) translateY(-90%) rotate(-30deg);
       left: 0;
@@ -207,13 +208,12 @@ section {
   section {
     flex-direction: column-reverse;
     .green-shadow {
-      transform: translateX(-20%) translateY(-380%) rotate(20deg);
-      left: 0;
+      display: none;
     }
   }
   .thoughts-colleagues-div {
     height: 350px;
-    width: 300px;
+    width: 260px;
   }
 
   .seperator {
@@ -221,6 +221,11 @@ section {
   }
 
   .quotes-icon-position {
-    transform: translate(-150%, -680%);
+    transform: translate(-80%, -680%);
   }
+
+  .colleague-picture {
+  height: 250px;
+  width: 250px;
+}
 }
