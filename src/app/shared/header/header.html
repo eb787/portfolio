@@ -11,7 +11,7 @@
             <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
         </div>
     </div>
-    <img *ngIf="!overlayOpen" class="burger-menu" src="icons/burger-menu.png" alt="Menü" (click)="toggleOverlay()" />
+    <img *ngIf="!overlayOpen" class="burger-menu" src="img/burger-menu.png" alt="Menü" (click)="toggleOverlay()" />
     <div class="overlay" *ngIf="overlayOpen">
         <div class="overlay-content">
             <button class="close-btn" (click)="toggleOverlay()">×</button>

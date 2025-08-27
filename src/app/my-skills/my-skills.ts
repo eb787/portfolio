@@ -21,17 +21,17 @@ export class MySkillsComponent implements AfterViewInit {
   currentLang: string;
 
   skills = [
-    { icon: 'icons/html-icon.svg', name: 'HTML' },
-    { icon: 'icons/css-icon.svg', name: 'CSS' },
-    { icon: 'icons/javascript-icon.svg', name: 'JavaScript' },
-    { icon: 'icons/typescript-icon.svg', name: 'TypeScript' },
-    { icon: 'icons/angular-icon.svg', name: 'Angular' },
-    { icon: 'icons/firebase-icon.svg', name: 'Firebase' },
-    { icon: 'icons/git-icon.svg', name: 'Git' },
-    { icon: 'icons/api-icon.svg', name: 'REST-API' },
-    { icon: 'icons/scrum-icon.svg', name: 'Scrum' },
-    { icon: 'icons/material-icon.svg', name: 'Material Design' },
-    { icon: 'icons/continually-icon.svg', name: 'Continually learning' }
+    { icon: 'img/html-icon.svg', name: 'HTML' },
+    { icon: 'img/css-icon.svg', name: 'CSS' },
+    { icon: 'img/javascript-icon.svg', name: 'JavaScript' },
+    { icon: 'img/typescript-icon.svg', name: 'TypeScript' },
+    { icon: 'img/angular-icon.svg', name: 'Angular' },
+    { icon: 'img/firebase-icon.svg', name: 'Firebase' },
+    { icon: 'img/git-icon.svg', name: 'Git' },
+    { icon: 'img/api-icon.svg', name: 'REST-API' },
+    { icon: 'img/scrum-icon.svg', name: 'Scrum' },
+    { icon: 'img/material-icon.svg', name: 'Material Design' },
+    { icon: 'img/continually-icon.svg', name: 'Continually learning' }
   ];
 
   constructor(

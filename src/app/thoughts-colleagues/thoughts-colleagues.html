@@ -2,7 +2,7 @@
     <div class="image-wrapper">
         <img class="green-shadow" src="img/green-my-skills-portfolio-section.png" alt="">
     </div>
-    <img class="quotes-icon-position" src="icons/quotes-icon.svg" alt="">
+    <img class="quotes-icon-position" src="img/quotes-icon.svg" alt="">
 
     <div *ngIf="testimonials.length">
         <div class="thoughts-colleagues-div">
@@ -15,13 +15,13 @@
         </div>
 
         <div class="icons-container">
-            <img class="arrow-button" src="icons/arrow-left-green.svg" alt="arrow-left" (click)="showPrevious()"
+            <img class="arrow-button" src="img/arrow-left-green.svg" alt="arrow-left" (click)="showPrevious()"
                 style="cursor: pointer;">
             <ng-container *ngFor="let item of testimonials; index as i">
-                <img [src]="currentIndex === i ? 'icons/ellipse-green.svg' : 'icons/ellipse-violete.svg'"
+                <img [src]="currentIndex === i ? 'img/ellipse-green.svg' : 'img/ellipse-violete.svg'"
                     alt="Indikator" class="ellipse-indicator" (click)="setIndex(i)" style="cursor: pointer;">
             </ng-container>
-            <img class="arrow-button" src="icons/arrow-right-green.svg" alt="arrow-right" (click)="showNext()"
+            <img class="arrow-button" src="img/arrow-right-green.svg" alt="arrow-right" (click)="showNext()"
                 style="cursor: pointer;">
         </div>
     </div>
