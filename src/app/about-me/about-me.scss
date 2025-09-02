@@ -63,6 +63,18 @@ p {
   width: 300px;
 }
 
+@media (min-width: 3000px) {
+  .about-me-picture-container {
+    display: none;
+  }
+  .about-me-text {
+    padding-left: 0;
+    padding-right: 0;
+    width: 1300px;
+  }
+}
+
+
 @media (max-width: 1400px) {
   .about-me-text {
     padding-left: 50px;
@@ -89,7 +101,6 @@ p {
   .about-me-text {
     padding-right: 150px;
   }
-
 }
 
 @media (max-width: 650px) {

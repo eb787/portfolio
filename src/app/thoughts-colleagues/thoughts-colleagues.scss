@@ -133,6 +133,30 @@ section {
   }
 }
 
+@media (min-width: 3000px) {
+  section {
+    flex-direction: column-reverse;
+  }
+  .image-wrapper {
+    align-items: flex-end;
+  }
+
+  .quotes-icon-position {
+    transform: translate(-400%, -500%);
+  }
+
+  .thoughts-colleagues-div {
+    margin-right: 0;
+    height: 245px;
+    width: 750px;
+    margin-top: 60px;
+  }
+
+  .seperator-colleague-section {
+    display: none;
+  }
+}
+
 @media (max-width: 1700px) {
   .thoughts-colleagues-div {
     height: 245px;
