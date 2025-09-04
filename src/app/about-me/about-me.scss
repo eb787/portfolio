@@ -40,7 +40,7 @@ p {
     display: flex;
     height: 390px;
     width: 390px;
-    margin-left: 300px;
+    margin-left: 250px;
     margin-bottom: 300px;
     position: absolute;
     z-index: -1;
@@ -63,7 +63,7 @@ p {
   width: 300px;
 }
 
-@media (min-width: 3000px) {
+@media (min-width: 1980px) {
   .about-me-picture-container {
     display: none;
   }

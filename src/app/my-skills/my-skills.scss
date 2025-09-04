@@ -21,7 +21,7 @@ section {
 .div-technologies {
   position: relative;
   display: grid;
-  max-width: 800px;
+  max-width: 850px;
   padding-left: 130px;
   gap: 50px;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -211,14 +211,18 @@ section {
   }
 }
 
-@media (min-width: 3000px) {
+@media (min-width: 1980px) {
   .div-technologies-my-skills-contant {
     .my-skills-text-container {
-      padding-left: 150px;
+      padding-bottom: 65px;
       .seperator-my-skills {
         display: none;
       }
     }
+  }
+  .div-technologies {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 

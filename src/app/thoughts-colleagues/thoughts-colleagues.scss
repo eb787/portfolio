@@ -14,8 +14,8 @@ section {
 .green-shadow {
   position: absolute;
   right: 0;
-  transform: translateX(10%) translateY(-70%) rotate(-75deg);
-  width: 45vw;
+  transform: translateX(-35%) translateY(-70%) rotate(-75deg);
+  width: 35vw;
   max-width: 500px;
   height: auto;
   pointer-events: none;
@@ -133,7 +133,7 @@ section {
   }
 }
 
-@media (min-width: 3000px) {
+@media (min-width: 1980px) {
   section {
     flex-direction: column-reverse;
   }
