@@ -136,6 +136,12 @@ nav {
   }
 }
 
+@media (min-width: 1980px) {
+ h2 {
+  padding-right: 600px;
+ }
+}
+
 @media (max-width: 1000px) {
   nav {
     .nav-links {

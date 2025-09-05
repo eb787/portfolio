@@ -146,7 +146,12 @@ h2 {
   }
 }
 
+@media (min-width: 1980px) {
+  .purple-portfolio-contact {
+  transform: rotate(-170deg) translate(0%, 62%);
+}
 
+}
 
 @media (max-width: 1700px) {
   .seperator-right-portfolio {

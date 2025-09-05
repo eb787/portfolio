@@ -76,6 +76,15 @@ main {
   }
 }
 
+@media (min-width: 1980px) {
+ section {
+  align-items: center;
+ }
+ main{
+  gap: 320px;
+ }
+}
+
 @media (max-width: 1000px) {
   main {
     display: flex;

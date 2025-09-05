@@ -20,12 +20,16 @@ export class HeaderComponant {
     this.overlayOpen = !this.overlayOpen;
   }
 
-  constructor(private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || this.translate.getDefaultLang();
-  }
+constructor(private translate: TranslateService) {
+  const savedLang = localStorage.getItem('lang') || this.translate.getDefaultLang();
+  this.translate.use(savedLang);
+  this.currentLang = savedLang;
+}
 
-  switchLanguage(lang: string) {
-    this.translate.use(lang);
-    this.currentLang = lang;
-  }
+ switchLanguage(lang: string) {
+  this.translate.use(lang);
+  this.currentLang = lang;
+  localStorage.setItem('lang', lang);
+}
+
 }
