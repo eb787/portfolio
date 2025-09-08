@@ -2,7 +2,7 @@ section {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding-top: 250px;
+  padding-bottom: 200px;
   position: relative;
 }
 
@@ -203,7 +203,7 @@ section {
 
 @media (max-width: 950px) {
   section {
-    padding-top: 150px;
+    padding-bottom: 200px;
     .green-shadow {
       transform: translateX(-20%) translateY(-90%) rotate(-30deg);
       left: 0;

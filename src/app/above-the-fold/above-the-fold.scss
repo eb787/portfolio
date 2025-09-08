@@ -2,6 +2,7 @@ section {
   display: flex;
   isolation: isolate;
   position: relative;
+  padding-bottom: 250px;
   .green-violet-hero {
     display: flex;
     position: absolute;
@@ -259,6 +260,7 @@ h3 {
 @media (max-width: 1300px) {
   section {
     flex-direction: column;
+    padding-bottom: 200px;
   }
   .green-violet-hero {
     height: 780px;

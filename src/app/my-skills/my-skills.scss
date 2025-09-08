@@ -1,5 +1,5 @@
 section {
-  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .div-technologies-my-skills-contant {
@@ -401,7 +401,7 @@ section {
 
 @media (max-width: 900px) {
   section {
-    padding-top: 150px;
+    padding-bottom: 200px;
   }
   .my-skills-text-mobile {
     &.de {
@@ -511,7 +511,6 @@ section {
       h2 {
         font-size: 28px;
       }
-
       .seperator-my-skills-mobile {
         width: 20px;
       }
@@ -520,7 +519,6 @@ section {
       h2 {
         font-size: 40px;
       }
-
       .seperator-my-skills-mobile {
         width: 30px;
       }
@@ -529,7 +527,6 @@ section {
   .div-technologies {
     max-width: 350px;
   }
-
   .p-mobile {
     padding-left: 20px;
     padding-right: 20px;

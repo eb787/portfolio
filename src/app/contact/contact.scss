@@ -1,7 +1,6 @@
 section {
   display: flex;
   flex-direction: column;
-  padding-top: 250px;
   position: relative;
 }
 
@@ -309,9 +308,6 @@ h2 {
 }
 
 @media (max-width: 950px) {
-  section{
-    padding-top: 150px;
-  }
   .seperator-contact {
     width: 200px;
   }
