@@ -214,6 +214,11 @@ section {
 @media (min-width: 1980px) {
   .div-technologies-my-skills-contant {
     .my-skills-text-container {
+      &.de {
+        h2 {
+          font-size: 62px;
+        }
+      }
       padding-bottom: 65px;
       .seperator-my-skills {
         display: none;
@@ -221,15 +226,19 @@ section {
     }
   }
   .div-technologies {
-    padding-left: 50px;
+    padding-left: 0;
     padding-right: 50px;
+    max-width: 730px;
   }
   .green-my-skills-portfolio-section {
-  transform: rotate(-10deg) translate(-115%, -70%);
-}
+    transform: rotate(-10deg) translate(-115%, -70%);
+  }
 }
 
 @media (max-width: 1600px) {
+  h2 {
+    font-size: 62px;
+  }
   .div-technologies {
     max-width: 700px;
     padding-left: 100px;

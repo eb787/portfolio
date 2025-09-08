@@ -42,10 +42,11 @@ h2 {
   display: flex;
   justify-content: space-around;
   color: white;
+  gap: 100px;
 
   > a {
     position: absolute;
-    right: 150px;
+    right: 50px;
     margin-top: 550px;
     width: 30px;
     height: 30px;
@@ -72,7 +73,6 @@ h2 {
   width: 650px;
   padding: 32px 24px;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
 
   form {
     display: flex;
@@ -290,8 +290,8 @@ h2 {
   }
   .contact-content {
     > a {
-      margin-top: 880px;
-      right: 380px;
+      margin-top: 920px;
+      right: 100px;
     }
   }
 }
@@ -305,11 +305,7 @@ h2 {
       margin-left: 100px;
     }
   }
-  .contact-content {
-    > a {
-      right: 280px;
-    }
-  }
+
 }
 
 @media (max-width: 950px) {
@@ -319,16 +315,16 @@ h2 {
   .seperator-contact {
     width: 200px;
   }
-  .contact-content {
-    > a {
-      right: 200px;
-    }
-  }
 }
 
 @media (max-width: 700px) {
   .seperator-contact {
     width: 100px;
+  }
+   .contact-content {
+    > a {
+      right: 10px;
+    }
   }
 }
 
@@ -353,12 +349,6 @@ h2 {
   .contact-form-container {
     button[type="submit"] {
       margin-left: 25px;
-    }
-  }
-  .contact-content {
-    > a {
-      margin-top: 900px;
-      right: 80px;
     }
   }
 }
