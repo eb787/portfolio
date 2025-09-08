@@ -13,8 +13,8 @@ export const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: 'enabled',  // ← hier wird das automatische Scrollen aktiviert
-      anchorScrolling: 'enabled'             // optional, falls du #anker-Links hast
+      scrollPositionRestoration: 'enabled',  
+      anchorScrolling: 'enabled'           
     })
   ],
   exports: [RouterModule]
