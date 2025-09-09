@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,8 +11,6 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.scss'
 })
 
-
-
 export class HeaderComponant {
   currentLang: string;
   overlayOpen = false;
@@ -21,7 +19,7 @@ export class HeaderComponant {
     this.overlayOpen = !this.overlayOpen;
   }
 
-constructor(private translate: TranslateService) {
+constructor(private translate: TranslateService, private router: Router) {
   const savedLang = localStorage.getItem('lang') || this.translate.getDefaultLang();
   this.translate.use(savedLang);
   this.currentLang = savedLang;
@@ -31,6 +29,22 @@ constructor(private translate: TranslateService) {
   this.translate.use(lang);
   this.currentLang = lang;
   localStorage.setItem('lang', lang);
+}
+
+scrollToFragment(fragment: string) {
+  const element = document.getElementById(fragment);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    setTimeout(() => this.scrollToFragment(fragment), 100);
+  }
+}
+
+onFragmentClick(fragment: string, event: MouseEvent) {
+  event.preventDefault();
+  this.router.navigate(['/'], { fragment }).then(() => {
+    this.scrollToFragment(fragment);
+  });
 }
 
 }

@@ -1,38 +1,49 @@
 <section>
-    <nav>
-        <h2>
-            <span class="e">E</span>r<span class="i">i</span>c
-        </h2>
+  <nav>
+    <h2>
+      <span class="e">E</span>r<span class="i">i</span>c
+    </h2>
 
-        <div class="nav-links desktop-only">
-            <a [routerLink]="['/']" fragment="about-me">{{ 'NAV.ABOUT_ME' | translate }}</a>
-            <a [routerLink]="['/']" fragment="my-skills">{{ 'NAV.SKILLS' | translate }}</a>
-            <a [routerLink]="['/']" fragment="projects">{{ 'NAV.PORTFOLIO' | translate }}</a>
-            <div class="language-switcher">
-                <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
-                <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
-            </div>
+    <div class="nav-links desktop-only">
+      <a [routerLink]="['/']" fragment="about-me" (click)="onFragmentClick('about-me', $event)">
+        {{ 'NAV.ABOUT_ME' | translate }}
+      </a>
+      <a [routerLink]="['/']" fragment="my-skills" (click)="onFragmentClick('my-skills', $event)">
+        {{ 'NAV.SKILLS' | translate }}
+      </a>
+      <a [routerLink]="['/']" fragment="projects" (click)="onFragmentClick('projects', $event)">
+        {{ 'NAV.PORTFOLIO' | translate }}
+      </a>
+      <div class="language-switcher">
+        <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
+        <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
+      </div>
+    </div>
+
+    <img *ngIf="!overlayOpen" class="burger-menu" src="img/burger-menu.png" alt="Menü" (click)="toggleOverlay()" />
+
+    <div class="overlay" *ngIf="overlayOpen">
+      <div class="overlay-content">
+        <button class="close-btn" (click)="toggleOverlay()">×</button>
+        <a [routerLink]="['/']" fragment="about-me" (click)="onFragmentClick('about-me', $event); toggleOverlay()">
+          {{ 'NAV.ABOUT_ME' | translate }}
+        </a>
+        <a [routerLink]="['/']" fragment="my-skills" (click)="onFragmentClick('my-skills', $event); toggleOverlay()">
+          {{ 'NAV.SKILLS' | translate }}
+        </a>
+        <a [routerLink]="['/']" fragment="projects" (click)="onFragmentClick('projects', $event); toggleOverlay()">
+          {{ 'NAV.PORTFOLIO' | translate }}
+        </a>
+        <a [routerLink]="['/']" fragment="contact" (click)="onFragmentClick('contact', $event); toggleOverlay()">
+          {{ 'NAV.CONTACT' | translate }}
+        </a>
+
+        <div class="language-switcher-mobile">
+          <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
+          <span>/</span>
+          <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
         </div>
-
-        <img *ngIf="!overlayOpen" class="burger-menu" src="img/burger-menu.png" alt="Menü" (click)="toggleOverlay()" />
-
-        <div class="overlay" *ngIf="overlayOpen">
-            <div class="overlay-content">
-                <button class="close-btn" (click)="toggleOverlay()">×</button>
-                <a [routerLink]="['/']" fragment="about-me" (click)="toggleOverlay()">{{ 'NAV.ABOUT_ME' | translate
-                    }}</a>
-                <a [routerLink]="['/']" fragment="my-skills" (click)="toggleOverlay()">{{ 'NAV.SKILLS' | translate
-                    }}</a>
-                <a [routerLink]="['/']" fragment="projects" (click)="toggleOverlay()">{{ 'NAV.PORTFOLIO' | translate
-                    }}</a>
-                <a [routerLink]="['/']" fragment="contact" (click)="toggleOverlay()">{{ 'NAV.CONTACT' | translate }}</a>
-
-                <div class="language-switcher-mobile">
-                    <button [class.active]="currentLang === 'de'" (click)="switchLanguage('de')">DE</button>
-                    <span>/</span>
-                    <button [class.active]="currentLang === 'en'" (click)="switchLanguage('en')">EN</button>
-                </div>
-            </div>
-        </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </section>

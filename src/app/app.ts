@@ -1,5 +1,10 @@
 import { Component, NgZone } from '@angular/core';
-import { Router, NavigationEnd, RouterOutlet, ActivatedRoute } from '@angular/router';
+import {
+  Router,
+  NavigationEnd,
+  RouterOutlet,
+  ActivatedRoute,
+} from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { filter } from 'rxjs/operators';
 
@@ -19,38 +24,26 @@ export class App {
     private ngZone: NgZone,
     private activatedRoute: ActivatedRoute
   ) {
-
     this.translate.setDefaultLang('de');
     const browserLang = this.translate.getBrowserLang();
     this.translate.use(browserLang?.match(/de|en/) ? browserLang : 'de');
 
- this.router.events
-    .pipe(filter(event => event instanceof NavigationEnd))
-    .subscribe((event: NavigationEnd) => {
-      const url = event.urlAfterRedirects;
-      const shouldScrollToTop = ['/privacy-policy', '/legal-notice'].includes(url);
-
-      if (shouldScrollToTop) {
-        this.ngZone.runOutsideAngular(() => {
-          setTimeout(() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }, 100);
-        });
-      } else {
-        const fragment = this.activatedRoute.snapshot.fragment;
-        if (fragment) {
-          this.ngZone.runOutsideAngular(() => {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.activatedRoute.fragment.subscribe((fragment) => {
+          if (fragment) {
             setTimeout(() => {
               const element = document.getElementById(fragment);
               if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
               }
             }, 100);
-          });
-        }
-      }
-    });
-
+          } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        });
+      });
   }
 
   switchLanguage(lang: string) {
