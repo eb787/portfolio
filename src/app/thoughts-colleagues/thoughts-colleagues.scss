@@ -231,6 +231,7 @@ section {
 @media (max-width: 600px) {
   section {
     flex-direction: column-reverse;
+    padding-bottom: 100px;
     .green-shadow {
       display: none;
     }

@@ -41,8 +41,6 @@ h2 {
   display: flex;
   justify-content: space-around;
   color: white;
-  gap: 100px;
-
   > a {
     position: absolute;
     right: 50px;
@@ -247,7 +245,6 @@ h2 {
   z-index: 1000;
 }
 }
-
 
 @media (max-width: 1500px) {
   .seperator-contact {

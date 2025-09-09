@@ -332,6 +332,7 @@ h2 {
 }
 
 @media (max-width: 450px) {
+
   .seperator-right-portfolio {
     width: 50px;
   }
@@ -377,6 +378,9 @@ h2 {
 }
 
 @media (max-width: 400px) {
+  section {
+  padding-bottom: 100px;
+}
   .seperator-right-portfolio {
     width: 50px;
   }

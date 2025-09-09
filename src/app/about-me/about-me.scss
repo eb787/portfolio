@@ -118,6 +118,9 @@ p {
 }
 
 @media (max-width: 400px) {
+  section {
+    padding-bottom: 150px;
+  }
   .about-me-text {
     padding-right: 50px;
     padding-left: 40px;
